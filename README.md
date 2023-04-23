@@ -82,9 +82,26 @@ We build a decision flow for choosing LLMs or fine-tuned models~\protect\footnot
 2. No use case
 
 ### Abilities with Scaling
+
+Scaling of LLMs~(e.g. parameters, training computation, etc.) can greatly empower pretrained language models. With the model scaling up, a model generally becomes more capable in a range of tasks. Reflected in some metrics, the performance shows a power-law relationship with the model scale.
+
 1. Use Case with Reasoning
+    - Arithmetic reasoning
+    - Problem solving
+    - Commonsense reasoning
 2. Use Cases with Emergent Abilities
-3. No-Use Cases and Understanding
+    - Word manipulation
+    - Logical deduction
+    - Logical sequence
+    - Logic grid puzzles
+    - Simple math problems
+    - Coding abilities
+    - Concept understanding
+3. No-Use Cases
+    - Redefine-math
+    - Into-the-unknown
+    - Memo-trap
+    - NegationQA
 
 ### Specific tasks
 1. No use case
