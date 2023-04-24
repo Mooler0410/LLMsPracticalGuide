@@ -51,6 +51,7 @@ We build an evolutionary tree of modern Large Language Models (LLMs) to trace th
 
 
 ### Pretraining data
+-**How does the pre-training objective affect what large language models learn about linguistic properties?**, ACL 2022. [Paper](https://aclanthology.org/2022.acl-short.16/)
 ### Finetuning data
 ### Test data/user data
 
