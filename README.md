@@ -13,7 +13,7 @@ A curated (still actively updated) list of practical guide resources of LLMs. Th
 We build an evolutionary tree of modern Large Language Models (LLMs) to trace the development of language models in recent years and highlights some of the most well-known models, in the following figure:
 
 <p align="center">
-<img width="600" src="./imgs/survey-gif-2.gif"/>
+<img width="600" src="./imgs/survey-gif-test.gif"/>
 </p>
 
 
