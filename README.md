@@ -7,7 +7,7 @@
 
 A curated (still actively updated) list of practical guide resources of LLMs. These sources aim to help practitioners navigate the vast landscape of large language models (LLMs) and their applications in natural language processing (NLP) applications. If you find any resources in our repository helpful, please feel free to use them (and don't forget to cite our paper!)
 
-## Latest News!💥
+## Latest News💥
 - We've released the secrets for our GIF figure! Hope you are interested. You can check out the file: *figure_gif.pptx*. [Apr/27, 2023] 
 
 
