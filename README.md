@@ -1,12 +1,28 @@
-<h1 align="center">The Practical Guides for Large Language Models <br> (Under Construction) </h1>
+<h1 align="center">The Practical Guides for Large Language Models </h1>
 
 
 <p align="center">
 	<img src="https://camo.githubusercontent.com/64f8905651212a80869afbecbf0a9c52a5d1e70beab750dea40a994fa9a9f3c6/68747470733a2f2f617765736f6d652e72652f62616467652e737667" alt="Awesome" data-canonical-src="https://awesome.re/badge.svg" style="max-width: 100%;">	     
 </p>
 
+A curated (still actively updated) list of practical guide resources of LLMs. These sources aim to help practitioners navigate the vast landscape of large language models (LLMs) and their applications in natural language processing (NLP) applications. If you find any resources in our repository helpful, please feel free to use them (and don't forget to cite our paper!)
 
-A curated (still actively updated) list of practical guide resources of LLMs. These sources aim to help practitioners navigate the vast landscape of large language models (LLMs) and their applications in natural language processing (NLP) applications. 
+## Latest News!💥
+- We've released the secrets for our GIF figure! Hope you are interested. You can check out the file: *figure_gif.pptx*. [Apr/27, 2023] 
+
+
+## Cite this Work
+Jingfeng Yang, Hongye Jin, Ruixiang Tang, Xiaotian Han, Qizhang Feng, Haoming Jiang, Bing Yin and Xia Hu. "Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond." arXiv preprint arXiv:2304.13712, 2023.
+```bibtex
+@article{yang2023harnessing,
+      title={Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond}, 
+      author={Jingfeng Yang and Hongye Jin and Ruixiang Tang and Xiaotian Han and Qizhang Feng and Haoming Jiang and Bing Yin and Xia Hu},
+      year={2023},
+      eprint={2304.13712},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
 
 ## Practical Guide for Models
 
@@ -15,6 +31,7 @@ We build an evolutionary tree of modern Large Language Models (LLMs) to trace th
 <p align="center">
 <img width="600" src="./imgs/survey-gif-test.gif"/>
 </p>
+
 
 
 ### BERT-style Language Models: Encoder-Decoder or Encoder-only
