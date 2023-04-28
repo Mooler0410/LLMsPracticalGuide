@@ -8,21 +8,18 @@
 A curated (still actively updated) list of practical guide resources of LLMs. These sources aim to help practitioners navigate the vast landscape of large language models (LLMs) and their applications in natural language processing (NLP) applications. If you find any resources in our repository helpful, please feel free to use them (and don't forget to cite our paper!)
 
 ## Latest News💥
-- We've released the secrets for our GIF figure! Hope you are interested. You can check out the file: *figure_gif.pptx*. [Apr/27, 2023] 
+- We used PowerPoint to plot the figure and released the source file [pptx](./source/figure_gif.pptx) for our GIF figure. We welcome pull requests to refine this figure, and if you find the source helpful, please cite our paper.
 
-
-## Cite this Work
-Jingfeng Yang, Hongye Jin, Ruixiang Tang, Xiaotian Han, Qizhang Feng, Haoming Jiang, Bing Yin and Xia Hu. "Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond." arXiv preprint arXiv:2304.13712, 2023.
-```bibtex
-@article{yang2023harnessing,
-      title={Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond}, 
-      author={Jingfeng Yang and Hongye Jin and Ruixiang Tang and Xiaotian Han and Qizhang Feng and Haoming Jiang and Bing Yin and Xia Hu},
-      year={2023},
-      eprint={2304.13712},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
-}
-```
+    ```bibtex
+    @article{yang2023harnessing,
+        title={Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond}, 
+        author={Jingfeng Yang and Hongye Jin and Ruixiang Tang and Xiaotian Han and Qizhang Feng and Haoming Jiang and Bing Yin and Xia Hu},
+        year={2023},
+        eprint={2304.13712},
+        archivePrefix={arXiv},
+        primaryClass={cs.CL}
+    }
+    ```
 
 ## Practical Guide for Models
 
