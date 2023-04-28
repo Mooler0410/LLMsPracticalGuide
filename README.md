@@ -5,7 +5,9 @@
 	<img src="https://camo.githubusercontent.com/64f8905651212a80869afbecbf0a9c52a5d1e70beab750dea40a994fa9a9f3c6/68747470733a2f2f617765736f6d652e72652f62616467652e737667" alt="Awesome" data-canonical-src="https://awesome.re/badge.svg" style="max-width: 100%;">	     
 </p>
 
-A curated (still actively updated) list of practical guide resources of LLMs. These sources aim to help practitioners navigate the vast landscape of large language models (LLMs) and their applications in natural language processing (NLP) applications. If you find any resources in our repository helpful, please feel free to use them (and don't forget to cite our paper!)
+A curated (still actively updated) list of practical guide resources of LLMs. It's based on our survey paper: [Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond](https://arxiv.org/abs/2304.13712).
+
+These sources aim to help practitioners navigate the vast landscape of large language models (LLMs) and their applications in natural language processing (NLP) applications. If you find any resources in our repository helpful, please feel free to use them (and don't forget to cite our paper!)
 
 ## Latest News💥
 - We used PowerPoint to plot the figure and released the source file [pptx](./source/figure_gif.pptx) for our GIF figure. We welcome pull requests to refine this figure, and if you find the source helpful, please cite our paper.
@@ -88,12 +90,16 @@ We build a decision flow for choosing LLMs or fine-tuned models~\protect\footnot
 </p>
 
 ### Traditional NLU tasks
-1. No use case
-2. Use case
 
-### Traditional NLG tasks
-1. Use case
-2. No use case
+- **A benchmark for toxic comment classification on civil comments dataset** [Paper](https://arxiv.org/abs/2301.11125)
+- **Is chatgpt a general-purpose natural language processing task solver?** [Paper](https://arxiv.org/abs/2302.06476)
+- **Benchmarking large language models for news summarization** [Paper](https://arxiv.org/abs/2301.13848)
+### Generation tasks
+- **News summarization and evaluation in the era of gpt-3** [Paper](https://arxiv.org/abs/2209.12356)
+- **Is chatgpt a good translator? yes with gpt-4 as the engine** [Paper](https://arxiv.org/abs/2301.08745)
+- **Multilingual machine translation systems from Microsoft for WMT21 shared task** [Paper](https://aclanthology.org/2021.wmt-1.54/)
+
+
 
 
 ### Knowledge-intensive tasks
@@ -128,6 +134,7 @@ Scaling of LLMs~(e.g. parameters, training computation, etc.) can greatly empowe
 
 
 
+
 ### Real-World Tasks
 
 
@@ -140,6 +147,13 @@ Scaling of LLMs~(e.g. parameters, training computation, etc.) can greatly empowe
 
 ### Trustworthiness
 1. Robustness and Calibration
-2. Fairness and Bias
-3. Spurious biases
 - **Calibrate before use: Improving few-shot performance of language models**, ICML 2021. [Paper](http://proceedings.mlr.press/v139/zhao21c.html)
+- **SPeC: A Soft Prompt-Based Calibration on Mitigating Performance Variability in Clinical Notes Summarization**, Arxiv 2023. [Paper](https://arxiv.org/abs/2303.13035)
+2. Spurious biases
+3: Safety issues
+- **GPT-4 System Sard**, [Paper](https://cdn.openai.com/papers/gpt-4-system-card.pdf)
+- **The science of detecting llm-generated texts** [Paper](https://arxiv.org/pdf/2303.07205.pdf)
+- **Constitutional ai: Harmlessness from ai feedback** [Paper](https://arxiv.org/abs/2212.08073)
+- **How stereotypes are shared through language: a review and introduction of the aocial categories and stereotypes communication (scsc) framework** [Paper](https://research.vu.nl/en/publications/how-stereotypes-are-shared-through-language-a-review-and-introduc)
+- **Gender shades: Intersectional accuracy disparities in commercial gender classification** [Paper](https://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf)
+
