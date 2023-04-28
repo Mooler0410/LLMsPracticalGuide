@@ -146,12 +146,18 @@ We build a decision flow for choosing LLMs or fine-tuned models~\protect\footnot
 1. Robustness and Calibration
 - **Calibrate before use: Improving few-shot performance of language models**, ICML 2021. [Paper](http://proceedings.mlr.press/v139/zhao21c.html)
 - **SPeC: A Soft Prompt-Based Calibration on Mitigating Performance Variability in Clinical Notes Summarization**, Arxiv 2023. [Paper](https://arxiv.org/abs/2303.13035)
+  
 2. Spurious biases
-
-3: Safety issues
-- **GPT-4 System Sard**, 2023 [Paper](https://cdn.openai.com/papers/gpt-4-system-card.pdf)
-- **The science of detecting llm-generated texts** Arxiv 2023[Paper](https://arxiv.org/pdf/2303.07205.pdf)
-- **Constitutional ai: Harmlessness from ai feedback**, Arxiv 2022[Paper](https://arxiv.org/abs/2212.08073)
-- **How stereotypes are shared through language: a review and introduction of the aocial categories and stereotypes communication (scsc) framework**, Review of Communication Research, 2019 [Paper](https://research.vu.nl/en/publications/how-stereotypes-are-shared-through-language-a-review-and-introduc)
-- **Gender shades: Intersectional accuracy disparities in commercial gender classification**, FaccT 2018 [Paper](https://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf)
+- **Shortcut learning of large language models in natural language understanding: A survey**, 2023 [Paper](https://arxiv.org/abs/2208.11857)
+- **Mitigating gender bias in captioning system**, WWW 2020 [Paper](https://dl.acm.org/doi/abs/10.1145/3442381.3449950)
+- **Calibrate Before Use: Improving Few-Shot Performance of Language Models**, ICML 2021 [Paper](https://arxiv.org/abs/2102.09690)
+- **Shortcut Learning in Deep Neural Networks**, Nature Machine Intelligence 2020 [Paper](https://www.nature.com/articles/s42256-020-00257-z)
+- **Do Prompt-Based Models Really Understand the Meaning of Their Prompts?**, NAACL 2022 [Paper](https://aclanthology.org/2022.naacl-main.167/)
+  
+3. Safety issues
+- **GPT-4 System Card**, [Paper](https://cdn.openai.com/papers/gpt-4-system-card.pdf)
+- **The science of detecting llm-generated texts**, [Paper](https://arxiv.org/pdf/2303.07205.pdf)
+- **Constitutional ai: Harmlessness from ai feedback**, [Paper](https://arxiv.org/abs/2212.08073)
+- **How stereotypes are shared through language: a review and introduction of the aocial categories and stereotypes communication (scsc) framework** [Paper](https://research.vu.nl/en/publications/how-stereotypes-are-shared-through-language-a-review-and-introduc)
+- **Gender shades: Intersectional accuracy disparities in commercial gender classification** [Paper](https://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf)
 
