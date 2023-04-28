@@ -138,8 +138,20 @@ We build a decision flow for choosing LLMs or fine-tuned models~\protect\footnot
 
 ### Efficiency
 1. Cost
+3 30 6 16 4
+- **Openai’s gpt-3 language model: A technical overview**, 2020. [Blog Post](https://lambdalabs.com/blog/demystifying-gpt-3)
+- **Measuring the carbon intensity of ai in cloud instances**, ACM Conference on Fairness, Accountability, and Transparency 2022. [Paper](https://dl.acm.org/doi/abs/10.1145/3531146.3533234)
+- **In AI, is bigger always better?**, 2023. [Article](https://www.nature.com/articles/d41586-023-00641-w)
+- **Language Models are Few-Shot Learners**, NeurIPS 2020. [Paper](https://proceedings.neurips.cc/paper_files/paper/2020/file/1457c0d6bfcb4967418bfb8ac142f64a-Paper.pdf)
+- **Pricing**, OpenAI. [Blog Post](https://openai.com/pricing)
 2. Latency
+- **Holistic evaluation of language models**, Arxiv 2022. [Paper](https://arxiv.org/abs/2211.09110)
 3. Parameter-Efficient Fine-Tuning
+42 58 62 63 
+- **LoRA: Low-Rank Adaptation of Large Language Models**, Arxiv 2021. [Paper](https://arxiv.org/abs/2106.09685)
+- **Prefix-Tuning: Optimizing Continuous Prompts for Generation**, ACL 2021. [Paper](https://aclanthology.org/2021.acl-long.353/)
+- **P-Tuning: Prompt Tuning Can Be Comparable to Fine-tuning Across Scales and Tasks**, ACL 2022. [Paper](https://aclanthology.org/2022.acl-short.8/)
+- **P-Tuning v2: Prompt Tuning Can Be Comparable to Fine-tuning Universally Across Scales and Tasks**, Arxiv 2022. [Paper](https://arxiv.org/abs/2110.07602)
 
 
 ### Trustworthiness
