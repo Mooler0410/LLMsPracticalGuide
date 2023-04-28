@@ -155,9 +155,9 @@ We build a decision flow for choosing LLMs or fine-tuned models~\protect\footnot
 - **Do Prompt-Based Models Really Understand the Meaning of Their Prompts?**, NAACL 2022 [Paper](https://aclanthology.org/2022.naacl-main.167/)
   
 3. Safety issues
-- **GPT-4 System Card**, [Paper](https://cdn.openai.com/papers/gpt-4-system-card.pdf)
-- **The science of detecting llm-generated texts**, [Paper](https://arxiv.org/pdf/2303.07205.pdf)
-- **Constitutional ai: Harmlessness from ai feedback**, [Paper](https://arxiv.org/abs/2212.08073)
-- **How stereotypes are shared through language: a review and introduction of the aocial categories and stereotypes communication (scsc) framework** [Paper](https://research.vu.nl/en/publications/how-stereotypes-are-shared-through-language-a-review-and-introduc)
-- **Gender shades: Intersectional accuracy disparities in commercial gender classification** [Paper](https://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf)
+- **GPT-4 System Card**, 2023 [Paper](https://cdn.openai.com/papers/gpt-4-system-card.pdf)
+- **The science of detecting llm-generated texts**, Arxiv 2023 [Paper](https://arxiv.org/pdf/2303.07205.pdf)
+- **Constitutional ai: Harmlessness from ai feedback**, Arxiv 2022 [Paper](https://arxiv.org/abs/2212.08073)
+- **How stereotypes are shared through language: a review and introduction of the aocial categories and stereotypes communication (scsc) framework**, Review of Communication Research, 2019 [Paper](https://research.vu.nl/en/publications/how-stereotypes-are-shared-through-language-a-review-and-introduc)
+- **Gender shades: Intersectional accuracy disparities in commercial gender classification**, FaccT 2018 [Paper](https://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf)
 
