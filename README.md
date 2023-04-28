@@ -149,12 +149,14 @@ Scaling of LLMs~(e.g. parameters, training computation, etc.) can greatly empowe
 1. Robustness and Calibration
 - **Calibrate before use: Improving few-shot performance of language models**, ICML 2021. [Paper](http://proceedings.mlr.press/v139/zhao21c.html)
 - **SPeC: A Soft Prompt-Based Calibration on Mitigating Performance Variability in Clinical Notes Summarization**, Arxiv 2023. [Paper](https://arxiv.org/abs/2303.13035)
+
 2. Spurious biases
 - **Shortcut learning of large language models in natural language understanding: A survey**, 2023 [Paper](https://arxiv.org/abs/2208.11857)
 - **Mitigating gender bias in captioning system**, WWW 2020 [Paper](https://dl.acm.org/doi/abs/10.1145/3442381.3449950)
 -**Calibrate Before Use: Improving Few-Shot Performance of Language Models**, ICML 2021 (https://arxiv.org/abs/2102.09690)
 -**Shortcut Learning in Deep Neural Networks**, Nature Machine Intelligence 2020 (https://www.nature.com/articles/s42256-020-00257-z)
 - **Do Prompt-Based Models Really Understand the Meaning of Their Prompts?**, NAACL 2022 (https://aclanthology.org/2022.naacl-main.167/)
+
 3: Safety issues
 - **GPT-4 System Card**, [Paper](https://cdn.openai.com/papers/gpt-4-system-card.pdf)
 - **The science of detecting llm-generated texts** [Paper](https://arxiv.org/pdf/2303.07205.pdf)
