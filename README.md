@@ -139,7 +139,7 @@ We build a decision flow for choosing LLMs or fine-tuned models~\protect\footnot
 ### Efficiency
 1. Cost
 - **Openai’s gpt-3 language model: A technical overview**, 2020. [Blog Post](https://lambdalabs.com/blog/demystifying-gpt-3)
-- **Measuring the carbon intensity of ai in cloud instances**, ACM Conference on Fairness, Accountability, and Transparency 2022. [Paper](https://dl.acm.org/doi/abs/10.1145/3531146.3533234)
+- **Measuring the carbon intensity of ai in cloud instances**, FaccT 2022. [Paper](https://dl.acm.org/doi/abs/10.1145/3531146.3533234)
 - **In AI, is bigger always better?**, Nature Article 2023. [Article](https://www.nature.com/articles/d41586-023-00641-w)
 - **Language Models are Few-Shot Learners**, NeurIPS 2020. [Paper](https://proceedings.neurips.cc/paper_files/paper/2020/file/1457c0d6bfcb4967418bfb8ac142f64a-Paper.pdf)
 - **Pricing**, OpenAI. [Blog Post](https://openai.com/pricing)
