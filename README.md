@@ -151,7 +151,7 @@ Scaling of LLMs~(e.g. parameters, training computation, etc.) can greatly empowe
 - **SPeC: A Soft Prompt-Based Calibration on Mitigating Performance Variability in Clinical Notes Summarization**, Arxiv 2023. [Paper](https://arxiv.org/abs/2303.13035)
 2. Spurious biases
 3: Safety issues
-- **GPT-4 System Sard**, [Paper](https://cdn.openai.com/papers/gpt-4-system-card.pdf)
+- **GPT-4 System Card**, [Paper](https://cdn.openai.com/papers/gpt-4-system-card.pdf)
 - **The science of detecting llm-generated texts** [Paper](https://arxiv.org/pdf/2303.07205.pdf)
 - **Constitutional ai: Harmlessness from ai feedback** [Paper](https://arxiv.org/abs/2212.08073)
 - **How stereotypes are shared through language: a review and introduction of the aocial categories and stereotypes communication (scsc) framework** [Paper](https://research.vu.nl/en/publications/how-stereotypes-are-shared-through-language-a-review-and-introduc)
