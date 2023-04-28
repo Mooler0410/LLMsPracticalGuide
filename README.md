@@ -157,7 +157,7 @@ Scaling of LLMs~(e.g. parameters, training computation, etc.) can greatly empowe
 -**Shortcut Learning in Deep Neural Networks**, Nature Machine Intelligence 2020 (https://www.nature.com/articles/s42256-020-00257-z)
 - **Do Prompt-Based Models Really Understand the Meaning of Their Prompts?**, NAACL 2022 (https://aclanthology.org/2022.naacl-main.167/)
   
-3: Safety issues
+3. Safety issues
 - **GPT-4 System Card**, [Paper](https://cdn.openai.com/papers/gpt-4-system-card.pdf)
 - **The science of detecting llm-generated texts** [Paper](https://arxiv.org/pdf/2303.07205.pdf)
 - **Constitutional ai: Harmlessness from ai feedback** [Paper](https://arxiv.org/abs/2212.08073)
