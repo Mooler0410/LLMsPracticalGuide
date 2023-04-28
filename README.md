@@ -74,10 +74,10 @@ We build an evolutionary tree of modern Large Language Models (LLMs) to trace th
 ### Finetuning data
 - **Benchmarking zero-shot text classification: Datasets, evaluation and entailment approach**, EMNLP 2019. [Paper](https://arxiv.org/abs/1909.00161)
 - **Language Models are Few-Shot Learners**, NIPS 2020. [Paper](https://proceedings.neurips.cc/paper/2020/hash/1457c0d6bfcb4967418bfb8ac142f64a-Abstract.html)
-- **Does Synthetic Data Generation of LLMs Help Clinical Text Mining?**, 2023. [Paper](https://arxiv.org/abs/2303.04360)
+- **Does Synthetic Data Generation of LLMs Help Clinical Text Mining?** Arxiv 2023 [Paper](https://arxiv.org/abs/2303.04360)
 ### Test data/user data
-- **Shortcut learning of large language models in natural language understanding: A survey**, 2023. [Paper](https://arxiv.org/abs/2208.11857)
-- **On the Robustness of ChatGPT: An Adversarial and Out-of-distribution Perspective**, 2023. [Paper](https://arxiv.org/abs/2302.12095)
+- **Shortcut learning of large language models in natural language understanding: A survey**, Arxiv 2023. [Paper](https://arxiv.org/abs/2208.11857)
+- **On the Robustness of ChatGPT: An Adversarial and Out-of-distribution Perspective** Arxiv, 2023. [Paper](https://arxiv.org/abs/2302.12095)
 
 
 
@@ -91,52 +91,49 @@ We build a decision flow for choosing LLMs or fine-tuned models~\protect\footnot
 
 ### Traditional NLU tasks
 
-- **A benchmark for toxic comment classification on civil comments dataset** [Paper](https://arxiv.org/abs/2301.11125)
-- **Is chatgpt a general-purpose natural language processing task solver?** [Paper](https://arxiv.org/abs/2302.06476)
-- **Benchmarking large language models for news summarization** [Paper](https://arxiv.org/abs/2301.13848)
+- **A benchmark for toxic comment classification on civil comments dataset** Arxiv 2023 [Paper](https://arxiv.org/abs/2301.11125)
+- **Is chatgpt a general-purpose natural language processing task solver?** Arxiv 2023[Paper](https://arxiv.org/abs/2302.06476)
+- **Benchmarking large language models for news summarization** Arxiv 2022 [Paper](https://arxiv.org/abs/2301.13848)
 ### Generation tasks
-- **News summarization and evaluation in the era of gpt-3** [Paper](https://arxiv.org/abs/2209.12356)
-- **Is chatgpt a good translator? yes with gpt-4 as the engine** [Paper](https://arxiv.org/abs/2301.08745)
-- **Multilingual machine translation systems from Microsoft for WMT21 shared task** [Paper](https://aclanthology.org/2021.wmt-1.54/)
+- **News summarization and evaluation in the era of gpt-3** Arxiv 2022 [Paper](https://arxiv.org/abs/2209.12356)
+- **Is chatgpt a good translator? yes with gpt-4 as the engine** Arxiv 2023 [Paper](https://arxiv.org/abs/2301.08745)
+- **Multilingual machine translation systems from Microsoft for WMT21 shared task**, WMT2021 [Paper](https://aclanthology.org/2021.wmt-1.54/)
+- **Can ChatGPT understand too? a comparative study on chatgpt and fine-tuned bert**, Arxiv 2023, [Paper](https://arxiv.org/pdf/2302.10198.pdf)
 
 
 
 
 ### Knowledge-intensive tasks
-1. Use case
-2. No use case
+- **Measuring massive multitask language understanding**, ICLR 2021 [Paper](https://arxiv.org/abs/2009.03300)
+- **Beyond the imitation game: Quantifying and extrapolating the capabilities of language models**, Arxiv 2022 [Paper](https://arxiv.org/abs/2206.04615)
+- **Inverse scaling prize**, 2022 [Link](https://github.com/inverse-scaling/prize)
+
 
 ### Abilities with Scaling
 
-Scaling of LLMs~(e.g. parameters, training computation, etc.) can greatly empower pretrained language models. With the model scaling up, a model generally becomes more capable in a range of tasks. Reflected in some metrics, the performance shows a power-law relationship with the model scale.
+- **Training Compute-Optimal Large Language Models**, NeurIPS 2022 [Paper](https://openreview.net/pdf?id=iBBcRUlOAPR)
+- **Scaling Laws for Neural Language Models**, Arxiv 2020 [Paper](https://arxiv.org/abs/2001.08361)
+- **Solving math word problems with process- and outcome-based feedback**, Arxiv 2022 [Paper](https://arxiv.org/abs/2211.14275)
+- **Chain of thought prompting elicits reasoning in large language models**, NeurIPS 2022 [Paper](https://arxiv.org/abs/2201.11903)
+- **Emergent abilities of large language models**, TMLR 2022 [Paper](https://arxiv.org/abs/2206.07682)
+- **Inverse scaling can become U-shaped**, Arxiv 2022 [Paper](https://arxiv.org/abs/2211.02011)
 
-1. Use Case with Reasoning
-    - Arithmetic reasoning
-    - Problem solving
-    - Commonsense reasoning
-2. Use Cases with Emergent Abilities
-    - Word manipulation
-    - Logical deduction
-    - Logical sequence
-    - Logic grid puzzles
-    - Simple math problems
-    - Coding abilities
-    - Concept understanding
-3. No-Use Cases
-    - Redefine-math
-    - Into-the-unknown
-    - Memo-trap
-    - NegationQA
 
 ### Specific tasks
-1. No use case
-2. Use case
+- **Image as a Foreign Language: BEiT Pretraining for All Vision and Vision-Language Tasks**, Arixv 2022 [Paper](https://arxiv.org/abs/2208.10442)
+- **PaLI: A Jointly-Scaled Multilingual Language-Image Model**, Arxiv 2022 [Paper](https://arxiv.org/abs/2209.06794)
+- **AugGPT: Leveraging ChatGPT for Text Data Augmentation**, Arxiv 2023 [Paper](https://arxiv.org/abs/2302.13007)
+- **Is gpt-3 a good data annotator?**, Arxiv 2022 [Paper](https://arxiv.org/abs/2212.10450)
+- **Want To Reduce Labeling Cost? GPT-3 Can Help**, EMNLP findings 2021 [Paper](https://aclanthology.org/2021.findings-emnlp.354/)
+- **GPT3Mix: Leveraging Large-scale Language Models for Text Augmentation**, EMNLP findings 2021 [Paper](https://aclanthology.org/2021.findings-emnlp.192/)
+- **LLM for Patient-Trial Matching: Privacy-Aware Data Augmentation Towards Better Performance and Generalizability**, Arxiv 2023 [Paper](https://arxiv.org/abs/2303.16756)
+- **ChatGPT Outperforms Crowd-Workers for Text-Annotation Tasks**, Arxiv 2023 [Paper](https://arxiv.org/abs/2303.15056)
+- **G-Eval: NLG Evaluation using GPT-4 with Better Human Alignment**, Arxiv 2023 [Paper](https://arxiv.org/abs/2303.16634)
+- **GPTScore: Evaluate as You Desire**, Arxiv 2023 [Paper](https://arxiv.org/abs/2302.04166)
+- **Large Language Models Are State-of-the-Art Evaluators of Translation Quality**, Arxiv 2023 [Paper](https://arxiv.org/abs/2302.14520)
+- **Is ChatGPT a Good NLG Evaluator? A Preliminary Study**, Arxiv 2023 [Paper](https://arxiv.org/abs/2303.04048)
 
-
-
-
-### Real-World Tasks
-
+### Real-World ''Tasks''
 
 
 ### Efficiency
@@ -150,10 +147,11 @@ Scaling of LLMs~(e.g. parameters, training computation, etc.) can greatly empowe
 - **Calibrate before use: Improving few-shot performance of language models**, ICML 2021. [Paper](http://proceedings.mlr.press/v139/zhao21c.html)
 - **SPeC: A Soft Prompt-Based Calibration on Mitigating Performance Variability in Clinical Notes Summarization**, Arxiv 2023. [Paper](https://arxiv.org/abs/2303.13035)
 2. Spurious biases
+
 3: Safety issues
-- **GPT-4 System Sard**, [Paper](https://cdn.openai.com/papers/gpt-4-system-card.pdf)
-- **The science of detecting llm-generated texts** [Paper](https://arxiv.org/pdf/2303.07205.pdf)
-- **Constitutional ai: Harmlessness from ai feedback** [Paper](https://arxiv.org/abs/2212.08073)
-- **How stereotypes are shared through language: a review and introduction of the aocial categories and stereotypes communication (scsc) framework** [Paper](https://research.vu.nl/en/publications/how-stereotypes-are-shared-through-language-a-review-and-introduc)
-- **Gender shades: Intersectional accuracy disparities in commercial gender classification** [Paper](https://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf)
+- **GPT-4 System Sard**, 2023 [Paper](https://cdn.openai.com/papers/gpt-4-system-card.pdf)
+- **The science of detecting llm-generated texts** Arxiv 2023[Paper](https://arxiv.org/pdf/2303.07205.pdf)
+- **Constitutional ai: Harmlessness from ai feedback**, Arxiv 2022[Paper](https://arxiv.org/abs/2212.08073)
+- **How stereotypes are shared through language: a review and introduction of the aocial categories and stereotypes communication (scsc) framework**, Review of Communication Research, 2019 [Paper](https://research.vu.nl/en/publications/how-stereotypes-are-shared-through-language-a-review-and-introduc)
+- **Gender shades: Intersectional accuracy disparities in commercial gender classification**, FaccT 2018 [Paper](https://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf)
 
