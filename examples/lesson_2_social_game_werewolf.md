@@ -49,10 +49,65 @@ Codebase: https://github.com/HMJiangGatech/GPT4-werewolf
 ```
 
 Totally wrong understanding of the rules of game. But it's fun to see how AI plays the game. 
-ChatGPT can not complete the game, due to the limited context length.
 
 ## ChatGPT Example 2
 
+```
+玩家 Charlie 加入游戏.
+你是第 2 位玩家.
+你的身份是 爪牙.
+场上有 5 位玩家.
+玩家 0: Alice
+玩家 1: Bob
+玩家 2: Charlie
+玩家 3: David
+玩家 4: Eve
+轮到你行动了.
+爪牙请睁眼，你的同伴是 Alice.
+玩家 上帝 说: 天亮了，所有人睁眼！请大家开始讨论。讨论时间为3轮。
+玩家 Alice 说: 大家好，我是Alice。我觉得我们需要先让每个人公开自己的身份，这样我们可以更好地讨论。我先声明，我不是狼人。
+玩家 Bob 说: 大家好，我是Bob。我想说的是，我晚上的信息很有用。我查看了中央区域的第1张牌和第3张牌，看到的是左边是酒鬼，右边是狼人。根据这个信息，我强烈怀疑一号玩家是狼人。
+玩家 上帝 说: 请Charlie发言。记住你晚上的信息是"爪牙请睁眼，你的同伴是 Alice."。根据别人的信息，如果你觉得你是狼人，不要轻易说自己是狼人，请想办法归票到别人身上。如果你觉得你不是狼人，请想办法归票到狼人身上。
+请输入你的发言: Bob的发言非常奇怪没有理由就怀疑Alice是狼人，所以我觉得Bob心态不好，像坏人
+玩家 David 说: 大家好，我是David。看了一下之前的讨论，我也觉得Bob的怀疑Alice的言论有些草率。但是，如果Bob的信息是真实的，那么我也觉得一号玩家可能是狼人。但是，我们也不能忽略其他可能性。我认为我们需要更多的讨论和推理，而不是先做出投票决定。
+玩家 Eve 说: 大家好，我是Eve。我晚上的信息是David是失眠者。我觉得现在我们有一点混乱了，不能就凭Bob的信息就这么怀疑一号玩家。我们需要更多的证据和推理。 Charlie说得对，Bob的怀疑可能是为了转移视线，我觉得我们需要更加仔细地分析每个人的言行举止。
+玩家 Alice 说: 我理解大家对Bob的怀疑，但我觉得我们应该更加仔细地分析每个人的言行举止。比如Eve的信息很有可能是假的，她可能是狼人，试图转移我们的注意力。我认为我们需要更多的证据和推理来确认身份。根据我的信息，我知道有一位狼人，但我不确定是谁。我认为我们需要仔细分析每个人的发言和投票，才能做出更精准的推断。
+玩家 Bob 说: 我理解大家的疑虑，但是根据我的信息，我还是怀疑一号玩家是狼人。我可以告诉大家，我不是狼人，我是村民。但是我也认同Alice的看法，我们需要更多的证据来确认每个人的身份。我觉得我们需要分析每个人的言行举止，特别是在白天的投票环节。
+玩家 上帝 说: 请Charlie发言。记住你晚上的信息是"爪牙请睁眼，你的同伴是 Alice."。根据别人的信息，如果你觉得你是狼人，不要轻易说自己是狼人，请想办法归票到别人身上。如果你觉得你不是狼人，请想办法归票到狼人身上。
+请输入你的发言: 这个游戏里面没有村民，更说明了Bob的可疑性。我建议投Bob
+玩家 David 说: 听了大家的讨论，我认为我们需要更多的证据来确认每个人的身份。虽然Bob的信息有些令人怀疑，但我们不能轻易地就怀疑他是狼人。我觉得我们需要更加仔细地分析每个人的言行举止，看看有没有什么矛盾和漏洞，才能做出更准确的推断。我不确定我的身份，但是我很确定我们需要更仔细地分析每个人的行为并搜寻线索。
+玩家 Eve 说: 根据Bob提供的信息，我也认为一号玩家可能是狼人。但是如果我们确定了他的身份，我们还需要再找出另外一位狼人。Charlie怀疑Bob是狼人，但除了他指责Alice外，他并未提供更多的证据。而且他推选Bob也可能是意图转移视线。我认为我们需要继续深入分析每个人的言行举止，直到我们找到足够的证据来确认每个人的身份。现在投Bob可能并不是最好的选择。
+玩家 Alice 说: 根据大家的讨论，我觉得我们不能轻易地就怀疑Bob是狼人，还需要更多的证据和推理。我晚上的信息非常有用，因为我知道至少有一位狼人。但是现在还不确定谁是狼人，所以我们需要继续仔细地观察每个人的行为，尤其是在白天的投票环节。可能有人在刻意隐瞒自己的身份，但是他们的言行举止可能会暴露出来。所以我们需要注意观察每个人的行为，尽可能地找出线索。
+玩家 Bob 说: 我明白大家对我的怀疑，但是我还是有理由怀疑一号玩家是狼人。我并不认为自己是狼人，我是村民。我同意大家的看法，我们需要更多的证据和推理来确认每个人的身份，不能凭空地就怀疑某个人。我认为我们需要更加细致地分析每个人的言行举止，找出可能的矛盾和漏洞。所以我支持继续讨论，直到我们找到足够的线索来确认每个人的身份。
+玩家 上帝 说: 请Charlie发言。记住你晚上的信息是"爪牙请睁眼，你的同伴是 Alice."。根据别人的信息，如果你觉得你是狼人，不要轻易说自己是狼人，请想办法归票到别人身上。如果你觉得你不是狼人，请想办法归票到狼人身上。
+请输入你的发言: 我觉得Eve也很可疑，他说David是失眠者，但是也没给出证据
+玩家 David 说: 根据大家的讨论，我也觉得我们需要更多的证据和线索来确认每个人的身份。Bob的信息让我怀疑一号玩家是狼人，但我们需要更多的证据来确认。Eve的信息可能是伪造的，但我也不能完全排除他是告诉了真相的可能性。Charlie指责Eve和Bob也让我感到疑虑，因为他并没有提供更多的证据。总之，我们需要更加仔细地分析每个人的言行举止，找出可能的矛盾和漏洞，才能做出更准确的推断。
+玩家 Eve 说: 我认为我们需要更加仔细地分析每个人的言行举止，找出线索来确认每个人的身份。我晚上的信息是David是失眠者，但这并不能完全确认他的身份。我同意大家的看法，需要更多的证据和推理
+Traceback (most recent call last):
+  File "agent.py", line 594, in <module>
+    gm.play_game()
+  File "agent.py", line 155, in play_game
+    self.game_end()
+  File "agent.py", line 191, in game_end
+    vote = player.day_phase_vote()
+  File "agent.py", line 279, in day_phase_vote
+    msg = self.day_phase_discussion()
+  File "agent.py", line 262, in day_phase_discussion
+    completion = openai.ChatCompletion.create(
+  File "/home/hjiang98/anaconda3/lib/python3.8/site-packages/openai/api_resources/chat_completion.py", line 25, in create
+    return super().create(*args, **kwargs)
+  File "/home/hjiang98/anaconda3/lib/python3.8/site-packages/openai/api_resources/abstract/engine_api_resource.py", line 153, in create
+    response, _, api_key = requestor.request(
+  File "/home/hjiang98/anaconda3/lib/python3.8/site-packages/openai/api_requestor.py", line 226, in request
+    resp, got_stream = self._interpret_response(result, stream)
+  File "/home/hjiang98/anaconda3/lib/python3.8/site-packages/openai/api_requestor.py", line 619, in _interpret_response
+    self._interpret_response_line(
+  File "/home/hjiang98/anaconda3/lib/python3.8/site-packages/openai/api_requestor.py", line 679, in _interpret_response_line
+    raise self.handle_error_response(
+openai.error.InvalidRequestError: This model's maximum context length is 4097 tokens. However, your messages resulted in 4253 tokens. Please reduce the length of the messages.
+```
+
+ChatGPT can not complete the game, due to the limited context length.
 
 ## GPT-4 Example 1
 
