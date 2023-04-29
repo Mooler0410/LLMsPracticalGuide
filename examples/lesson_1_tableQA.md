@@ -1,5 +1,7 @@
 # Lesson -- Table-based Question Answering
 
+In this lesson, we ask the model to answer questions based on a table. The table is provided as a prompt. The model is expected to answer questions about the table.
+
 Comparing the following two examples, ChatGPT is vulnerable to table row order perturbation, while GPT4 is robust to table row order perturbation. Such robustness could probably be due to two reasons. The first reason is larger model size and more pretraining data of GPT4. Secondly, better truthfulness stemming from better RLHF alignment could help GPT4 follow different formats of the same instructions better. 
 
 # Example 1 (2022/04/29)
@@ -42,7 +44,7 @@ Based on the given table, the longest song length is 5 minutes and 2 seconds, wh
 
 ### Evidence
 
-![alt text](example_1_chatgpt_evidence.png)
+![alt text](imgs/example_1_chatgpt_evidence.png)
 
 ## GPT4
 
@@ -92,7 +94,7 @@ The longest song in the table is "Screwed Up," with a length of 5 minutes and 2 
 
 ### Evidence
 
-![alt text](example_1_gpt4_evidence.png)
+![alt text](imgs/example_1_gpt4_evidence.png)
 
 
 # Example 2 (2022/04/29)
@@ -133,7 +135,7 @@ The longest song length in the table is "Ghetto Queen" with a length of 5:00 min
 
 ### Evidence
 
-![alt text](example_2_chatgpt_evidence.png)
+![alt text](imgs/example_2_chatgpt_evidence.png)
 
 ## GPT4
 
@@ -183,4 +185,4 @@ Of all the song lengths listed, "Screwed Up" is the longest, with a length of 5 
 
 ### Evidence
 
-![alt text](example_2_chatgpt_evidence.png)
+![alt text](imgs/example_2_chatgpt_evidence.png)
