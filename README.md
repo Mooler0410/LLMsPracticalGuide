@@ -10,7 +10,11 @@ A curated (still actively updated) list of practical guide resources of LLMs. It
 These sources aim to help practitioners navigate the vast landscape of large language models (LLMs) and their applications in natural language processing (NLP) applications. If you find any resources in our repository helpful, please feel free to use them (and don't forget to cite our paper!)
 
 ## Latest News💥
-- We used PowerPoint to plot the figure and released the source file [pptx](./source/figure_gif.pptx) for our GIF figure. We welcome pull requests to refine this figure, and if you find the source helpful, please cite our paper.
+- We used PowerPoint to plot the figure and released the source file [pptx](./source/figure_gif.pptx) for our GIF figure. [4/27/2023]
+- We released the source file for the still version [pptx](./source/figure_still.pptx), and replaced the figure in this repo with the still version. [4/29/2023]
+- Add AlexaTM, UniLM, UniLMv2 to the figure, and correct the logo for Tk. [4/29/2023]
+
+We welcome pull requests to refine this figure, and if you find the source helpful, please cite our paper.
 
     ```bibtex
     @article{yang2023harnessing,
@@ -28,7 +32,7 @@ These sources aim to help practitioners navigate the vast landscape of large lan
 We build an evolutionary tree of modern Large Language Models (LLMs) to trace the development of language models in recent years and highlights some of the most well-known models, in the following figure:
 
 <p align="center">
-<img width="600" src="./imgs/survey-gif-test.gif"/>
+<img width="600" src="./imgs/models-colorgrey.jpg"/>
 </p>
 
 
