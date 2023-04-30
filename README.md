@@ -212,11 +212,22 @@ We build a decision flow for choosing LLMs or fine-tuned models~\protect\footnot
 - **Scaling Laws for Reward Model Overoptimization**, Arxiv 2022 [Paper](https://arxiv.org/abs/2210.10760)
 - Scalable Oversight: **Measuring Progress on Scalable Oversight for Large Language Models**, Arxiv 2022 [Paper](https://arxiv.org/pdf/2211.03540.pdf)
 
-#### Safety Alignment
+#### Safety Alignment (Harmless)
 
 - **Red Teaming Language Models with Language Models**, Arxiv 2022 [Paper](https://arxiv.org/abs/2202.03286)
 - **Constitutional ai: Harmlessness from ai feedback**, Arxiv 2022 [Paper](https://arxiv.org/abs/2212.08073)
 - **The Capacity for Moral Self-Correction in Large Language Models**, Arxiv 2023 [Paper](https://arxiv.org/abs/2302.07459)
+- **OpenAI: Our approach to AI safety**, 2023 [Blog](https://openai.com/blog/our-approach-to-ai-safety)
+
+#### Truthfulness Alignment (Honest)
+
+- **Reinforcement Learning for Language Models**, 2023 [Blog](https://gist.github.com/yoavg/6bff0fecd65950898eba1bb321cfbd81)
+
+#### Practical Guides for Prompting (Helpful)
+
+- OpenAI Cookbook. [Blog](https://github.com/openai/openai-cookbook/blob/main/techniques_to_improve_reliability.md)
+- Prompt Engineering. [Blog](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/)
+- ChatGPT Prompt Engineering for Developers! [Course](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
 
 #### Alignment Efforts of Open-source Communtity
 
@@ -228,11 +239,5 @@ We build a decision flow for choosing LLMs or fine-tuned models~\protect\footnot
 - OpenAssitant. [Repo](https://github.com/LAION-AI/Open-Assistant)
 - ChatGLM. [Repo](https://github.com/THUDM/ChatGLM-6B)
 - MOSS. [Repo](https://github.com/OpenLMLab/MOSS)
-
-### Practical Guides for Prompting
-
-- OpenAI Cookbook. [Blog](https://github.com/openai/openai-cookbook/blob/main/techniques_to_improve_reliability.md)
-- Prompt Engineering. [Blog](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/)
-- ChatGPT Prompt Engineering for Developers! [Course](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
 
 
