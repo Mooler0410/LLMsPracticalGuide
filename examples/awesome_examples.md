@@ -1,4 +1,8 @@
-# Example 1 -- Table-based Question Answering (2022/04/29)
+# Lesson -- Table-based Question Answering
+
+Comparing the following two examples, ChatGPT is vulnerable to table row order perturbation, while GPT4 is robust to table row order perturbation. Such robustness could probably be due to two reasons. The first reason is larger model size and more pretraining data of GPT4. Secondly, better truthfulness stemming from better RLHF alignment could help GPT4 follow different formats of the same instructions better. 
+
+# Example 1 (2022/04/29)
 
 ## ChatGPT
 
@@ -91,7 +95,7 @@ The longest song in the table is "Screwed Up," with a length of 5 minutes and 2 
 ![alt text](example_1_gpt4_evidence.png)
 
 
-# Example 2 -- Perturbed Table-based Question Answering (2022/04/29)
+# Example 2 (2022/04/29)
 
 ## ChatGPT
 
