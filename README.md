@@ -5,7 +5,7 @@
 	<img src="https://camo.githubusercontent.com/64f8905651212a80869afbecbf0a9c52a5d1e70beab750dea40a994fa9a9f3c6/68747470733a2f2f617765736f6d652e72652f62616467652e737667" alt="Awesome" data-canonical-src="https://awesome.re/badge.svg" style="max-width: 100%;">	     
 </p>
 
-A curated (still actively updated) list of practical guide resources of LLMs. It's based on our survey paper: [Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond](https://arxiv.org/abs/2304.13712).
+A curated (still actively updated) list of practical guide resources of LLMs. It's based on our survey paper: [Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond](https://arxiv.org/abs/2304.13712). The survey is partially based on the [Blog](https://jingfengyang.github.io/gpt).
 
 These sources aim to help practitioners navigate the vast landscape of large language models (LLMs) and their applications in natural language processing (NLP) applications. If you find any resources in our repository helpful, please feel free to use them (and don't forget to cite our paper!)
 
@@ -35,7 +35,9 @@ We build an evolutionary tree of modern Large Language Models (LLMs) to trace th
 <img width="600" src="./imgs/models-colorgrey.jpg"/>
 </p>
 
-
+### Other Practical Guides for LLMs
+- Why did all of the public reproduction of GPT-3 fail? In which tasks should we use GPT-3.5/ChatGPT? [Blog](https://jingfengyang.github.io/gpt) 
+- Building LLM applications for production, 2023. [Blog](https://huyenchip.com/2023/04/11/llm-engineering.html)
 
 ### BERT-style Language Models: Encoder-Decoder or Encoder-only
 
@@ -216,4 +218,21 @@ We build a decision flow for choosing LLMs or fine-tuned models~\protect\footnot
 - **Constitutional ai: Harmlessness from ai feedback**, Arxiv 2022 [Paper](https://arxiv.org/abs/2212.08073)
 - **The Capacity for Moral Self-Correction in Large Language Models**, Arxiv 2023 [Paper](https://arxiv.org/abs/2302.07459)
 
-### 
+### Alignment Efforts of Open-source Communtity
+
+- Alpaca. [Repo](https://github.com/tatsu-lab/stanford_alpaca)
+- Vicuna. [Repo](https://github.com/lm-sys/FastChat)
+- Dolly. [Blog](https://www.databricks.com/blog/2023/04/12/dolly-first-open-commercially-viable-instruction-tuned-llm)
+- DeepSpeed-Chat. [Blog](https://github.com/microsoft/DeepSpeedExamples/tree/master/applications/DeepSpeed-Chat)
+- GPT4All. [Repo](https://github.com/nomic-ai/gpt4all)
+- OpenAssitant. [Repo](https://github.com/LAION-AI/Open-Assistant)
+- ChatGLM. [Repo](https://github.com/THUDM/ChatGLM-6B)
+- MOSS. [Repo](https://github.com/OpenLMLab/MOSS)
+
+### Practical Guides for Prompting
+
+- OpenAI Cookbook. [Blog](https://github.com/openai/openai-cookbook/blob/main/techniques_to_improve_reliability.md)
+- Prompt Engineering. [Blog](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/)
+- ChatGPT Prompt Engineering for Developers! [Course](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
+
+
