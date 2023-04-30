@@ -16,7 +16,7 @@ These sources aim to help practitioners navigate the vast landscape of large lan
 
 We welcome pull requests to refine this figure, and if you find the source helpful, please cite our paper.
 
-    ```bibtex
+```bibtex
     @article{yang2023harnessing,
         title={Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond}, 
         author={Jingfeng Yang and Hongye Jin and Ruixiang Tang and Xiaotian Han and Qizhang Feng and Haoming Jiang and Bing Yin and Xia Hu},
@@ -25,7 +25,7 @@ We welcome pull requests to refine this figure, and if you find the source helpf
         archivePrefix={arXiv},
         primaryClass={cs.CL}
     }
-    ```
+```
 
 ## Practical Guide for Models
 
