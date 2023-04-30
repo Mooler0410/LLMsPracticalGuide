@@ -1,4 +1,4 @@
-# Example 1
+# Example 1 (2022/04/29)
 
 ## ChatGPT
 
@@ -91,7 +91,7 @@ The longest song in the table is "Screwed Up," with a length of 5 minutes and 2 
 ![alt text](example_1_gpt4_evidence.png)
 
 
-# Example 2
+# Example 2 (2022/04/29)
 
 ## ChatGPT
 
