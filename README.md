@@ -231,6 +231,7 @@ We build a decision flow for choosing LLMs or fine-tuned models~\protect\footnot
 
 #### Alignment Efforts of Open-source Communtity
 
+- **Self-Instruct: Aligning Language Model with Self Generated Instructions**, Arxiv 2022 [Paper](https://arxiv.org/abs/2212.10560)
 - Alpaca. [Repo](https://github.com/tatsu-lab/stanford_alpaca)
 - Vicuna. [Repo](https://github.com/lm-sys/FastChat)
 - Dolly. [Blog](https://www.databricks.com/blog/2023/04/12/dolly-first-open-commercially-viable-instruction-tuned-llm)
