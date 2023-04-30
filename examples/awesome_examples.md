@@ -184,7 +184,3 @@ Of all the song lengths listed, "Screwed Up" is the longest, with a length of 5 
 ### Evidence
 
 ![alt text](example_2_chatgpt_evidence.png)
-
-### Lesson
-
-Comparing Example 1 and Example 2, ChatGPT is vulnerable to table row order perturbation, while GPT4 is robust to table row order perturbation. Such robustness could probably be due to two reasons. The first reason is larger model size and more pretraining data of GPT4. Secondly, better truthfulness stemming from better RLHF alignment could help GPT4 follow different formats of the same instructions better. 
