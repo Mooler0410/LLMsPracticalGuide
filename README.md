@@ -36,8 +36,9 @@ We build an evolutionary tree of modern Large Language Models (LLMs) to trace th
 </p>
 
 ### Other Practical Guides for LLMs
-- Why did all of the public reproduction of GPT-3 fail? In which tasks should we use GPT-3.5/ChatGPT? [Blog](https://jingfengyang.github.io/gpt) 
-- Building LLM applications for production, 2023. [Blog](https://huyenchip.com/2023/04/11/llm-engineering.html)
+- Why did all of the public reproduction of GPT-3 fail? In which tasks should we use GPT-3.5/ChatGPT? 2023, [Blog](https://jingfengyang.github.io/gpt) 
+- Building LLM applications for production, 2023, [Blog](https://huyenchip.com/2023/04/11/llm-engineering.html)
+- Data-centric Artificial Intelligence, 2023, [Repo](https://github.com/daochenzha/data-centric-AI)/[Blog](https://towardsdatascience.com/what-are-the-data-centric-ai-concepts-behind-gpt-models-a590071bb727)/[Paper](https://arxiv.org/abs/2303.10158)
 
 ### BERT-style Language Models: Encoder-Decoder or Encoder-only
 
