@@ -9,6 +9,32 @@ A curated (still actively updated) list of practical guide resources of LLMs. It
 
 These sources aim to help practitioners navigate the vast landscape of large language models (LLMs) and their applications in natural language processing (NLP) applications. If you find any resources in our repository helpful, please feel free to use them (and don't forget to cite our paper!)
 
+* [The Practical Guides for Large Language Models ](#the-practical-guides-for-large-language-models-)
+   * [Latest News<g-emoji class="g-emoji" alias="boom" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4a5.png">💥</g-emoji>](#latest-news)
+   * [Other Practical Guides for LLMs](#other-practical-guides-for-llms)
+   * [Practical Guide for Models](#practical-guide-for-models)
+      * [BERT-style Language Models: Encoder-Decoder or Encoder-only](#bert-style-language-models-encoder-decoder-or-encoder-only)
+      * [GPT-style Language Models: Decoder-only](#gpt-style-language-models-decoder-only)
+   * [Practical Guide for Data](#practical-guide-for-data)
+      * [Pretraining data](#pretraining-data)
+      * [Finetuning data](#finetuning-data)
+      * [Test data/user data](#test-datauser-data)
+   * [Practical Guide for NLP Tasks](#practical-guide-for-nlp-tasks)
+      * [Traditional NLU tasks](#traditional-nlu-tasks)
+      * [Generation tasks](#generation-tasks)
+      * [Knowledge-intensive tasks](#knowledge-intensive-tasks)
+      * [Abilities with Scaling](#abilities-with-scaling)
+      * [Specific tasks](#specific-tasks)
+      * [Real-World ''Tasks''](#real-world-tasks)
+      * [Efficiency](#efficiency)
+      * [Trustworthiness](#trustworthiness)
+      * [Benchmark Instruction Tuning](#benchmark-instruction-tuning)
+      * [Alignment](#alignment)
+         * [Safety Alignment (Harmless)](#safety-alignment-harmless)
+         * [Truthfulness Alignment (Honest)](#truthfulness-alignment-honest)
+         * [Practical Guides for Prompting (Helpful)](#practical-guides-for-prompting-helpful)
+         * [Alignment Efforts of Open-source Communtity](#alignment-efforts-of-open-source-communtity)
+
 ## Latest News💥
 - We used PowerPoint to plot the figure and released the source file [pptx](./source/figure_gif.pptx) for our GIF figure. [4/27/2023]
 - We released the source file for the still version [pptx](./source/figure_still.pptx), and replaced the figure in this repo with the still version. [4/29/2023]
@@ -26,6 +52,11 @@ We welcome pull requests to refine this figure, and if you find the source helpf
         primaryClass={cs.CL}
     }
     ```
+## Other Practical Guides for LLMs
+
+- **Why did all of the public reproduction of GPT-3 fail? In which tasks should we use GPT-3.5/ChatGPT?** 2023, [Blog](https://jingfengyang.github.io/gpt) 
+- **Building LLM applications for production**, 2023, [Blog](https://huyenchip.com/2023/04/11/llm-engineering.html)
+- **Data-centric Artificial Intelligence**, 2023, [Repo](https://github.com/daochenzha/data-centric-AI)/[Blog](https://towardsdatascience.com/what-are-the-data-centric-ai-concepts-behind-gpt-models-a590071bb727)/[Paper](https://arxiv.org/abs/2303.10158)
 
 ## Practical Guide for Models
 
@@ -35,11 +66,6 @@ We build an evolutionary tree of modern Large Language Models (LLMs) to trace th
 <img width="600" src="./imgs/models-colorgrey.jpg"/>
 </p>
 
-### Other Practical Guides for LLMs
-- Why did all of the public reproduction of GPT-3 fail? In which tasks should we use GPT-3.5/ChatGPT? 2023, [Blog](https://jingfengyang.github.io/gpt) 
-- Building LLM applications for production, 2023, [Blog](https://huyenchip.com/2023/04/11/llm-engineering.html)
-- Data-centric Artificial Intelligence, 2023, [Repo](https://github.com/daochenzha/data-centric-AI)/[Blog](https://towardsdatascience.com/what-are-the-data-centric-ai-concepts-behind-gpt-models-a590071bb727)/[Paper](https://arxiv.org/abs/2303.10158)
-
 ### BERT-style Language Models: Encoder-Decoder or Encoder-only
 
 - BERT **BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding**, 2018, [Paper](https://aclanthology.org/N19-1423.pdf)
@@ -48,9 +74,9 @@ We build an evolutionary tree of modern Large Language Models (LLMs) to trace th
 - ALBERT **ALBERT: A Lite BERT for Self-supervised Learning of Language Representations**, 2019, [Paper](https://arxiv.org/abs/1909.11942)
 - UniLM **Unified Language Model Pre-training for Natural Language Understanding and Generation**, 2019 [Paper](https://arxiv.org/abs/1905.03197)
 - ELECTRA **ELECTRA: PRE-TRAINING TEXT ENCODERS AS DISCRIMINATORS RATHER THAN GENERATORS**, 2020, [Paper](https://openreview.net/pdf?id=r1xMH1BtvB)
-- T5 **"Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer"**. *Colin Raffel et al.* JMLR 2019. [Paper](https://arxiv.org/abs/1910.10683)]
-- GLM **"GLM-130B: An Open Bilingual Pre-trained Model"**. 2022. [Paper](https://arxiv.org/abs/2210.02414)] 
-- AlexaTM **"AlexaTM 20B: Few-Shot Learning Using a Large-Scale Multilingual Seq2Seq Model"**. *Saleh Soltan et al.* arXiv 2022. [Paper](https://arxiv.org/abs/2208.01448)]
+- T5 **"Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer"**. *Colin Raffel et al.* JMLR 2019. [Paper](https://arxiv.org/abs/1910.10683)
+- GLM **"GLM-130B: An Open Bilingual Pre-trained Model"**. 2022. [Paper](https://arxiv.org/abs/2210.02414)
+- AlexaTM **"AlexaTM 20B: Few-Shot Learning Using a Large-Scale Multilingual Seq2Seq Model"**. *Saleh Soltan et al.* arXiv 2022. [Paper](https://arxiv.org/abs/2208.01448)
 - ST-MoE **ST-MoE: Designing Stable and Transferable Sparse Expert Models**. 2022 [Paper](https://arxiv.org/abs/2202.08906)
 
 
@@ -61,7 +87,7 @@ We build an evolutionary tree of modern Large Language Models (LLMs) to trace th
 - GPT-3 **"Language Models are Few-Shot Learners"**. NeurIPS 2020. [Paper](https://arxiv.org/abs/2005.14165)
 - OPT **"OPT: Open Pre-trained Transformer Language Models"**. 2022. [Paper](https://arxiv.org/abs/2205.01068)
 - PaLM **"PaLM: Scaling Language Modeling with Pathways"**. *Aakanksha Chowdhery et al.* arXiv 2022. [Paper](https://arxiv.org/abs/2204.02311)
-- BLOOM  **"BLOOM: A 176B-Parameter Open-Access Multilingual Language Model"**. 2022. [Paper](https://arxiv.org/abs/2211.05100)]
+- BLOOM  **"BLOOM: A 176B-Parameter Open-Access Multilingual Language Model"**. 2022. [Paper](https://arxiv.org/abs/2211.05100)
 - MT-NLG **"Using DeepSpeed and Megatron to Train Megatron-Turing NLG 530B, A Large-Scale Generative Language Model"**. 2021. [Paper](https://arxiv.org/abs/2201.11990)
 - GLaM **"GLaM: Efficient Scaling of Language Models with Mixture-of-Experts"**. ICML 2022. [Paper](https://arxiv.org/abs/2112.06905)
 - Gopher **"Scaling Language Models: Methods, Analysis & Insights from Training Gopher"**. 2021. [Paper](http://arxiv.org/abs/2112.11446v2)
@@ -79,6 +105,7 @@ We build an evolutionary tree of modern Large Language Models (LLMs) to trace th
 
 
 ### Pretraining data
+- **RedPajama**, 2023. [Repo](https://github.com/togethercomputer/RedPajama-Data)
 - **The Pile: An 800GB Dataset of Diverse Text for Language Modeling**, Arxiv 2020. [Paper](https://arxiv.org/abs/2101.00027)
 - **How does the pre-training objective affect what large language models learn about linguistic properties?**, ACL 2022. [Paper](https://aclanthology.org/2022.acl-short.16/)
 - **Scaling laws for neural language models**, 2020. [Paper](https://arxiv.org/abs/2001.08361)
@@ -228,20 +255,21 @@ We build a decision flow for choosing LLMs or fine-tuned models~\protect\footnot
 
 #### Practical Guides for Prompting (Helpful)
 
-- OpenAI Cookbook. [Blog](https://github.com/openai/openai-cookbook/blob/main/techniques_to_improve_reliability.md)
-- Prompt Engineering. [Blog](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/)
-- ChatGPT Prompt Engineering for Developers! [Course](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
+- **OpenAI Cookbook**. [Blog](https://github.com/openai/openai-cookbook/blob/main/techniques_to_improve_reliability.md)
+- **Prompt Engineering**. [Blog](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/)
+- **ChatGPT Prompt Engineering for Developers!** [Course](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
 
 #### Alignment Efforts of Open-source Communtity
 
 - **Self-Instruct: Aligning Language Model with Self Generated Instructions**, Arxiv 2022 [Paper](https://arxiv.org/abs/2212.10560)
-- Alpaca. [Repo](https://github.com/tatsu-lab/stanford_alpaca)
-- Vicuna. [Repo](https://github.com/lm-sys/FastChat)
-- Dolly. [Blog](https://www.databricks.com/blog/2023/04/12/dolly-first-open-commercially-viable-instruction-tuned-llm)
-- DeepSpeed-Chat. [Blog](https://github.com/microsoft/DeepSpeedExamples/tree/master/applications/DeepSpeed-Chat)
-- GPT4All. [Repo](https://github.com/nomic-ai/gpt4all)
-- OpenAssitant. [Repo](https://github.com/LAION-AI/Open-Assistant)
-- ChatGLM. [Repo](https://github.com/THUDM/ChatGLM-6B)
-- MOSS. [Repo](https://github.com/OpenLMLab/MOSS)
+- **Alpaca**. [Repo](https://github.com/tatsu-lab/stanford_alpaca)
+- **Vicuna**. [Repo](https://github.com/lm-sys/FastChat)
+- **Dolly**. [Blog](https://www.databricks.com/blog/2023/04/12/dolly-first-open-commercially-viable-instruction-tuned-llm)
+- **DeepSpeed-Chat**. [Blog](https://github.com/microsoft/DeepSpeedExamples/tree/master/applications/DeepSpeed-Chat)
+- **GPT4All**. [Repo](https://github.com/nomic-ai/gpt4all)
+- **OpenAssitant**. [Repo](https://github.com/LAION-AI/Open-Assistant)
+- **ChatGLM**. [Repo](https://github.com/THUDM/ChatGLM-6B)
+- **MOSS**. [Repo](https://github.com/OpenLMLab/MOSS)
+- **Lamini**. [Repo](https://github.com/lamini-ai/lamini/)/[Blog](https://lamini.ai/blog/introducing-lamini)
 
 
