@@ -7,11 +7,36 @@
 
 A curated (still actively updated) list of practical guide resources of LLMs. It's based on our survey paper: [Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond](https://arxiv.org/abs/2304.13712). The survey is partially based on the second half of this [Blog](https://jingfengyang.github.io/gpt).
 
-These sources aim to help practitioners navigate the vast landscape of large language models (LLMs) and their applications in natural language processing (NLP) applications. If you find any resources in our repository helpful, please feel free to use them (and don't forget to cite our paper!)
+These sources aim to help practitioners navigate the vast landscape of large language models (LLMs) and their applications in natural language processing (NLP) applications. If you find any resources in our repository helpful, please feel free to use them (don't forget to cite our paper! 😃)
 
+```bibtex
+    @article{yang2023harnessing,
+        title={Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond}, 
+        author={Jingfeng Yang and Hongye Jin and Ruixiang Tang and Xiaotian Han and Qizhang Feng and Haoming Jiang and Bing Yin and Xia Hu},
+        year={2023},
+        eprint={2304.13712},
+        archivePrefix={arXiv},
+        primaryClass={cs.CL}
+    }
+```
+
+## Latest News💥
+- We used PowerPoint to plot the figure and released the source file [pptx](./source/figure_gif.pptx) for our GIF figure. [4/27/2023]
+- We released the source file for the still version [pptx](./source/figure_still.pptx), and replaced the figure in this repo with the still version. [4/29/2023]
+- Add AlexaTM, UniLM, UniLMv2 to the figure, and correct the logo for Tk. [4/29/2023]
+
+We welcome pull requests to refine this figure, and if you find the source helpful, please cite our paper.
+
+
+## Other Practical Guides for LLMs
+
+- **Why did all of the public reproduction of GPT-3 fail? In which tasks should we use GPT-3.5/ChatGPT?** 2023, [Blog](https://jingfengyang.github.io/gpt) 
+- **Building LLM applications for production**, 2023, [Blog](https://huyenchip.com/2023/04/11/llm-engineering.html)
+- **Data-centric Artificial Intelligence**, 2023, [Repo](https://github.com/daochenzha/data-centric-AI)/[Blog](https://towardsdatascience.com/what-are-the-data-centric-ai-concepts-behind-gpt-models-a590071bb727)/[Paper](https://arxiv.org/abs/2303.10158)
+
+
+## Catalog
 * [The Practical Guides for Large Language Models ](#the-practical-guides-for-large-language-models-)
-   * [Latest News<g-emoji class="g-emoji" alias="boom" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4a5.png">💥</g-emoji>](#latest-news)
-   * [Other Practical Guides for LLMs](#other-practical-guides-for-llms)
    * [Practical Guide for Models](#practical-guide-for-models)
       * [BERT-style Language Models: Encoder-Decoder or Encoder-only](#bert-style-language-models-encoder-decoder-or-encoder-only)
       * [GPT-style Language Models: Decoder-only](#gpt-style-language-models-decoder-only)
@@ -34,29 +59,6 @@ These sources aim to help practitioners navigate the vast landscape of large lan
          * [Truthfulness Alignment (Honest)](#truthfulness-alignment-honest)
          * [Practical Guides for Prompting (Helpful)](#practical-guides-for-prompting-helpful)
          * [Alignment Efforts of Open-source Communtity](#alignment-efforts-of-open-source-communtity)
-
-## Latest News💥
-- We used PowerPoint to plot the figure and released the source file [pptx](./source/figure_gif.pptx) for our GIF figure. [4/27/2023]
-- We released the source file for the still version [pptx](./source/figure_still.pptx), and replaced the figure in this repo with the still version. [4/29/2023]
-- Add AlexaTM, UniLM, UniLMv2 to the figure, and correct the logo for Tk. [4/29/2023]
-
-We welcome pull requests to refine this figure, and if you find the source helpful, please cite our paper.
-
-    ```bibtex
-    @article{yang2023harnessing,
-        title={Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond}, 
-        author={Jingfeng Yang and Hongye Jin and Ruixiang Tang and Xiaotian Han and Qizhang Feng and Haoming Jiang and Bing Yin and Xia Hu},
-        year={2023},
-        eprint={2304.13712},
-        archivePrefix={arXiv},
-        primaryClass={cs.CL}
-    }
-    ```
-## Other Practical Guides for LLMs
-
-- **Why did all of the public reproduction of GPT-3 fail? In which tasks should we use GPT-3.5/ChatGPT?** 2023, [Blog](https://jingfengyang.github.io/gpt) 
-- **Building LLM applications for production**, 2023, [Blog](https://huyenchip.com/2023/04/11/llm-engineering.html)
-- **Data-centric Artificial Intelligence**, 2023, [Repo](https://github.com/daochenzha/data-centric-AI)/[Blog](https://towardsdatascience.com/what-are-the-data-centric-ai-concepts-behind-gpt-models-a590071bb727)/[Paper](https://arxiv.org/abs/2303.10158)
 
 ## Practical Guide for Models
 
