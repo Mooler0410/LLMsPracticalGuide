@@ -5,9 +5,14 @@
 	<img src="https://camo.githubusercontent.com/64f8905651212a80869afbecbf0a9c52a5d1e70beab750dea40a994fa9a9f3c6/68747470733a2f2f617765736f6d652e72652f62616467652e737667" alt="Awesome" data-canonical-src="https://awesome.re/badge.svg" style="max-width: 100%;">	     
 </p>
 
-A curated (still actively updated) list of practical guide resources of LLMs. It's based on our survey paper: [Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond](https://arxiv.org/abs/2304.13712). The survey is partially based on the second half of this [Blog](https://jingfengyang.github.io/gpt).
+A curated (still actively updated) list of practical guide resources of LLMs. It's based on our survey paper: [Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond](https://arxiv.org/abs/2304.13712). The survey is partially based on the second half of this [Blog](https://jingfengyang.github.io/gpt).We also build an evolutionary tree of modern Large Language Models (LLMs) to trace the development of language models in recent years and highlights some of the most well-known models. 
 
-These sources aim to help practitioners navigate the vast landscape of large language models (LLMs) and their applications in natural language processing (NLP) applications. If you find any resources in our repository helpful, please feel free to use them (don't forget to cite our paper! 😃)
+These sources aim to help practitioners navigate the vast landscape of large language models (LLMs) and their applications in natural language processing (NLP) applications. If you find any resources in our repository helpful, please feel free to use them (don't forget to cite our paper! 😃). We welcome pull requests to refine this figure! 
+
+<p align="center">
+<img width="600" src="./imgs/models-colorgrey.jpg"/>
+</p>
+
 
 ```bibtex
     @article{yang2023harnessing,
@@ -25,7 +30,7 @@ These sources aim to help practitioners navigate the vast landscape of large lan
 - We released the source file for the still version [pptx](./source/figure_still.pptx), and replaced the figure in this repo with the still version. [4/29/2023]
 - Add AlexaTM, UniLM, UniLMv2 to the figure, and correct the logo for Tk. [4/29/2023]
 
-We welcome pull requests to refine this figure, and if you find the source helpful, please cite our paper.
+
 
 
 ## Other Practical Guides for LLMs
@@ -61,12 +66,6 @@ We welcome pull requests to refine this figure, and if you find the source helpf
          * [Alignment Efforts of Open-source Communtity](#alignment-efforts-of-open-source-communtity)
 
 ## Practical Guide for Models
-
-We build an evolutionary tree of modern Large Language Models (LLMs) to trace the development of language models in recent years and highlights some of the most well-known models, in the following figure:
-
-<p align="center">
-<img width="600" src="./imgs/models-colorgrey.jpg"/>
-</p>
 
 ### BERT-style Language Models: Encoder-Decoder or Encoder-only
 
