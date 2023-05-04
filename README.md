@@ -5,7 +5,7 @@
 	<img src="https://camo.githubusercontent.com/64f8905651212a80869afbecbf0a9c52a5d1e70beab750dea40a994fa9a9f3c6/68747470733a2f2f617765736f6d652e72652f62616467652e737667" alt="Awesome" data-canonical-src="https://awesome.re/badge.svg" style="max-width: 100%;">	     
 </p>
 
-A curated (still actively updated) list of practical guide resources of LLMs. It's based on our survey paper: [Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond](https://arxiv.org/abs/2304.13712). The survey is partially based on the second half of this [Blog](https://jingfengyang.github.io/gpt).We also build an evolutionary tree of modern Large Language Models (LLMs) to trace the development of language models in recent years and highlights some of the most well-known models. 
+A curated (still actively updated) list of practical guide resources of LLMs. It's based on our survey paper: [Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond](https://arxiv.org/abs/2304.13712). The survey is partially based on the second half of this [Blog](https://jingfengyang.github.io/gpt). We also build an evolutionary tree of modern Large Language Models (LLMs) to trace the development of language models in recent years and highlights some of the most well-known models. 
 
 These sources aim to help practitioners navigate the vast landscape of large language models (LLMs) and their applications in natural language processing (NLP) applications. If you find any resources in our repository helpful, please feel free to use them (don't forget to cite our paper! 😃). We welcome pull requests to refine this figure! 
 
@@ -273,4 +273,7 @@ We build a decision flow for choosing LLMs or fine-tuned models~\protect\footnot
 - **MOSS**. [Repo](https://github.com/OpenLMLab/MOSS)
 - **Lamini**. [Repo](https://github.com/lamini-ai/lamini/)/[Blog](https://lamini.ai/blog/introducing-lamini)
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Mooler0410/LLMsPracticalGuide&type=Date)](https://star-history.com/#Mooler0410/LLMsPracticalGuide&Date)
 
