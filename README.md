@@ -277,6 +277,14 @@ We build a decision flow for choosing LLMs or fine-tuned models~\protect\footnot
 - **Lamini**. [Repo](https://github.com/lamini-ai/lamini/)/[Blog](https://lamini.ai/blog/introducing-lamini)
 
 ## Usage and Restrictions
+
+<!-- We build a decision flow for choosing LLMs or fine-tuned models~\protect\footnotemark for user's NLP applications.  -->
+<!-- The decision flow helps users assess whether their downstream NLP applications at hand meet specific conditions and, based on that evaluation, determine whether LLMs or fine-tuned models are the most suitable choice for their applications. -->
+
+We build a table summarizing the LLMs usage restrictions (e.g. for commercial and research purposes). In particular, we provide the information from the models and their pretraining data's perspective.
+We urge the users in the community to refer to the licensing information for public models and data and use them in a responsible manner.
+We urge the developers to pay special attention to licensing, make them transparent and comprehensive, to prevent any unwanted and unforeseen usage.
+
 <table class="table table-bordered table-hover table-condensed">
     <thead><tr><th title="Field #1">LLMs</th>
     <th title="Field #2" colspan="3" align="center">Model</th>
