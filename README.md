@@ -5,9 +5,10 @@
 	<img src="https://camo.githubusercontent.com/64f8905651212a80869afbecbf0a9c52a5d1e70beab750dea40a994fa9a9f3c6/68747470733a2f2f617765736f6d652e72652f62616467652e737667" alt="Awesome" data-canonical-src="https://awesome.re/badge.svg" style="max-width: 100%;">	     
 </p>
 
-A curated (still actively updated) list of practical guide resources of LLMs. It's based on our survey paper: [Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond](https://arxiv.org/abs/2304.13712). The survey is partially based on the second half of this [Blog](https://jingfengyang.github.io/gpt). We also build an evolutionary tree of modern Large Language Models (LLMs) to trace the development of language models in recent years and highlights some of the most well-known models. 
+A curated (still actively updated) list of practical guide resources of LLMs. It's based on our survey paper: [Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond](https://arxiv.org/abs/2304.13712) and efforsts from @[xinyadu](https://github.com/xinyadu). The survey is partially based on the second half of this [Blog](https://jingfengyang.github.io/gpt). We also build an evolutionary tree of modern Large Language Models (LLMs) to trace the development of language models in recent years and highlights some of the most well-known models. 
 
-These sources aim to help practitioners navigate the vast landscape of large language models (LLMs) and their applications in natural language processing (NLP) applications. If you find any resources in our repository helpful, please feel free to use them (don't forget to cite our paper! 😃). We welcome pull requests to refine this figure! 
+These sources aim to help practitioners navigate the vast landscape of large language models (LLMs) and their applications in natural language processing (NLP) applications. We also include their usage restrictions based on the model and data licensing information.
+If you find any resources in our repository helpful, please feel free to use them (don't forget to cite our paper! 😃). We welcome pull requests to refine this figure! 
 
 <p align="center">
 <img width="600" src="./imgs/models-colorgrey.jpg"/>
@@ -26,6 +27,7 @@ These sources aim to help practitioners navigate the vast landscape of large lan
 ```
 
 ## Latest News💥
+- We added usage and restrictions section.
 - We used PowerPoint to plot the figure and released the source file [pptx](./source/figure_gif.pptx) for our GIF figure. [4/27/2023]
 - We released the source file for the still version [pptx](./source/figure_still.pptx), and replaced the figure in this repo with the still version. [4/29/2023]
 - Add AlexaTM, UniLM, UniLMv2 to the figure, and correct the logo for Tk. [4/29/2023]
@@ -64,6 +66,7 @@ These sources aim to help practitioners navigate the vast landscape of large lan
          * [Truthfulness Alignment (Honest)](#truthfulness-alignment-honest)
          * [Practical Guides for Prompting (Helpful)](#practical-guides-for-prompting-helpful)
          * [Alignment Efforts of Open-source Communtity](#alignment-efforts-of-open-source-communtity)
+   * [Usage and Restractions (Models and Data)](#Usage-and-Restrictions)
 
 ## Practical Guide for Models
 
@@ -272,6 +275,289 @@ We build a decision flow for choosing LLMs or fine-tuned models~\protect\footnot
 - **ChatGLM**. [Repo](https://github.com/THUDM/ChatGLM-6B)
 - **MOSS**. [Repo](https://github.com/OpenLMLab/MOSS)
 - **Lamini**. [Repo](https://github.com/lamini-ai/lamini/)/[Blog](https://lamini.ai/blog/introducing-lamini)
+
+## Usage and Restrictions
+
+<!-- We build a decision flow for choosing LLMs or fine-tuned models~\protect\footnotemark for user's NLP applications.  -->
+<!-- The decision flow helps users assess whether their downstream NLP applications at hand meet specific conditions and, based on that evaluation, determine whether LLMs or fine-tuned models are the most suitable choice for their applications. -->
+
+We build a table summarizing the LLMs usage restrictions (e.g. for commercial and research purposes). In particular, we provide the information from the models and their pretraining data's perspective.
+We urge the users in the community to refer to the licensing information for public models and data and use them in a responsible manner.
+We urge the developers to pay special attention to licensing, make them transparent and comprehensive, to prevent any unwanted and unforeseen usage.
+
+<table class="table table-bordered table-hover table-condensed">
+    <thead><tr><th title="Field #1">LLMs</th>
+    <th title="Field #2" colspan="3" align="center">Model</th>
+    <!-- <th title="Field #3"></th> -->
+    <!-- <th title="Field #4"></th> -->
+    <th title="Field #5" colspan="2" align="center">Data</th>
+    <!-- <th title="Field #6"></th> -->
+    </tr></thead>
+    <tbody><tr>
+    <td> </td>
+    <td><b>License<b></td>
+    <td><b>Commercial Use<b></td>
+    <td><b>Other noteable restrictions<b></td>
+    <td><b>License<b></td>
+    <td><b>Corpus<b></td>
+    </tr>
+    <tr>
+        <td colspan="6" align="left"><b>Encoder-only</b></td>
+    <tr>
+    <tr>
+    <td>BERT series of models (general domain)</td>
+    <td>Apache 2.0</td>
+    <td>✅</td>
+    <td> </td>
+    <td>Public</td>
+    <td>BooksCorpus, English Wikipedia</td>
+    </tr>
+    <tr>
+    <td>RoBERTa</td>
+    <td>MIT license</td>
+    <td>✅</td>
+    <td> </td>
+    <td>Public</td>
+    <td>BookCorpus, CC-News, OpenWebText, STORIES</td>
+    </tr>
+    <tr>
+    <td>ERNIE</td>
+    <td>Apache 2.0</td>
+    <td>✅</td>
+    <td> </td>
+    <td>Public</td>
+    <td>English Wikipedia</td>
+    </tr>
+    <tr>
+    <td>SciBERT</td>
+    <td>Apache 2.0</td>
+    <td>✅</td>
+    <td> </td>
+    <td>Public</td>
+    <td>BERT corpus, <a href="https://aclanthology.org/N18-3011.pdf">1.14M papers from Semantic Scholar</a></td>
+    </tr>
+    <tr>
+    <td>LegalBERT</td>
+    <td>CC BY-SA 4.0</td>
+    <td>❌</td>
+    <td> </td>
+    <td>Public (except data from the <a href="https://case.law/">Case Law Access Project</a>)</td>
+    <td>EU legislation,  US court cases, etc.</td>
+    </tr>
+    <tr>
+    <td>BioBERT</td>
+    <td>Apache 2.0</td>
+    <td>✅</td>
+    <td> </td>
+    <td><a href="https://www.nlm.nih.gov/databases/download/terms_and_conditions.html">PubMed</a></td>
+    <td>PubMed, PMC</td>
+    </tr>
+    <tr>
+        <td colspan="6" align="left"><b>Encoder-Decoder</b></td>
+    <tr>
+    <tr>
+    <td>T5</td>
+    <td>Apache 2.0</td>
+    <td>✅</td>
+    <td> </td>
+    <td>Public</td>
+    <td>C4</td>
+    </tr>
+    <tr>
+    <td>Flan-T5</td>
+    <td>Apache 2.0</td>
+    <td>✅</td>
+    <td> </td>
+    <td>Public</td>
+    <td>C4, Mixture of tasks (Fig 2 in paper)</td>
+    </tr>
+    <tr>
+    <td>BART</td>
+    <td>Apache 2.0</td>
+    <td>✅</td>
+    <td> </td>
+    <td>Public</td>
+    <td>RoBERTa corpus </td>
+    </tr>
+    <tr>
+    <td>GLM</td>
+    <td>Apache 2.0</td>
+    <td>✅</td>
+    <td> </td>
+    <td>Public</td>
+    <td>BooksCorpus and English Wikipedia</td>
+    </tr>
+    <tr>
+    <td>ChatGLM</td>
+    <td><a href="https://github.com/THUDM/ChatGLM-6B/blob/main/MODEL_LICENSE">ChatGLM License</a></td>
+    <td>❌</td>
+    <td>No use for illegal purposes or military research, no harm the public interest of society</td>
+    <td>N/A</td>
+    <td>1T tokens of Chinese and English corpus</td>
+    </tr>
+    <tr>
+        <td colspan="6" align="left"><b>Decoder-only</b></td>
+    <tr>
+    <td>GPT2 </td>
+    <td><a href="https://github.com/openai/gpt-2/blob/master/LICENSE">Modified MIT License</a></td>
+    <td>✅</td>
+    <td>Use GPT-2 responsibly and clearly indicate your content was created using GPT-2.</td>
+    <td>Public</td>
+    <td>WebText</td>
+    </tr>
+    <tr>
+    <td>GPT-Neo</td>
+    <td>MIT license</td>
+    <td>✅</td>
+    <td> </td>
+    <td>Public</td>
+    <td><a href="https://pile.eleuther.ai/">Pile</a></td>
+    </tr>
+    <tr>
+    <td>GPT-J</td>
+    <td>Apache 2.0</td>
+    <td>✅</td>
+    <td> </td>
+    <td>Public</td>
+    <td>Pile</td>
+    </tr>
+    <tr>
+    <td>---&gt; Dolly</td>
+    <td>CC BY NC 4.0</td>
+    <td>❌</td>
+    <td> </td>
+    <td>CC BY NC 4.0, Subject to terms of Use of the data generated by OpenAI</td>
+    <td>Pile, Self-Instruct</td>
+    </tr>
+    <tr>
+    <td>---&gt; GPT4ALL-J</td>
+    <td>Apache 2.0</td>
+    <td>✅</td>
+    <td> </td>
+    <td>Public</td>
+    <td><a href="https://huggingface.co/datasets/nomic-ai/gpt4all-j-prompt-generations">GPT4All-J dataset</a></td>
+    </tr>
+    <tr>
+    <td>Pythia</td>
+    <td>Apache 2.0</td>
+    <td>✅</td>
+    <td> </td>
+    <td>Public</td>
+    <td>Pile</td>
+    </tr>
+    <tr>
+    <td>---&gt; Dolly v2</td>
+    <td>MIT license</td>
+    <td>✅</td>
+    <td> </td>
+    <td>Public</td>
+    <td>Pile, databricks-dolly-15k</td>
+    </tr>
+    <tr>
+    <td>OPT</td>
+    <td><a href="https://github.com/facebookresearch/metaseq/blob/main/projects/OPT/MODEL_LICENSE.md?fbclid=IwAR1BFK5X1XdUpx_QXoiqyfzYWdNAXJPcg8Cf0ddv5T7sa2UrLUvymj1J8G4">OPT-175B LICENSE AGREEMENT</a></td>
+    <td>❌</td>
+    <td>No development relating to surveillance research and military, no harm the public interest of society</td>
+    <td>Public</td>
+    <td>RoBERTa corpus, the Pile, PushShift.io Reddit</td>
+    </tr>
+    <tr>
+    <td>---&gt; OPT-IML</td>
+    <td><a href="https://github.com/facebookresearch/metaseq/blob/main/projects/OPT/MODEL_LICENSE.md?fbclid=IwAR1BFK5X1XdUpx_QXoiqyfzYWdNAXJPcg8Cf0ddv5T7sa2UrLUvymj1J8G4">OPT-175B LICENSE AGREEMENT</a></td>
+    <td>❌</td>
+    <td>same to OPT</td>
+    <td>Public</td>
+    <td>OPT corpus, Extended version of Super-NaturalInstructions</td>
+    </tr>
+    <tr>
+    <td>YaLM</td>
+    <td>Apache 2.0</td>
+    <td>✅</td>
+    <td> </td>
+    <td>Unspecified</td>
+    <td>Pile, Teams collected Texts in Russian</td>
+    </tr>
+    <tr>
+    <td>BLOOM</td>
+    <td><a href="https://bigscience.huggingface.co/blog/the-bigscience-rail-license">The BigScience RAIL License</a></td>
+    <td>✅</td>
+    <td>No use of generating verifiably false information with the purpose of harming others; <br/>content without expressly disclaiming that the text is machine generated</td>
+    <td>Public</td>
+    <td>ROOTS corpus (Lauren¸con et al., 2022)</td>
+    </tr>
+    <tr>
+    <td>---&gt; BLOOMZ</td>
+    <td><a href="https://bigscience.huggingface.co/blog/the-bigscience-rail-license">The BigScience RAIL License</a></td>
+    <td>✅</td>
+    <td>same to BLOOM</td>
+    <td>Public</td>
+    <td>ROOTS corpus, xP3</td>
+    </tr>
+    <tr>
+    <td>Galactica</td>
+    <td><a href="https://github.com/paperswithcode/galai/blob/main/LICENSE-MODEL.md">CC BY-NC 4.0</a></td>
+    <td>❌</td>
+    <td> </td>
+    <td>N/A</td>
+    <td>The Galactica Corpus</td>
+    </tr>
+    <tr>
+    <td>LLaMA</td>
+    <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSfqNECQnMkycAp2jP4Z9TFX0cGR4uf7b_fBxjY_OjhJILlKGA/viewform">Non-commercial bespoke license</a></td>
+    <td>❌</td>
+    <td>No development relating to surveillance research and military, no harm the public interest of society</td>
+    <td>Public</td>
+    <td>CommonCrawl, C4, Github, Wikipedia, etc.</td>
+    </tr>
+    <tr>
+    <td>---&gt; Alpaca</td>
+    <td>CC BY NC 4.0</td>
+    <td>❌</td>
+    <td> </td>
+    <td>CC BY NC 4.0, Subject to terms of Use of the data generated by OpenAI</td>
+    <td>LLaMA corpus, Self-Instruct</td>
+    </tr>
+    <tr>
+    <td>---&gt; Vicuna</td>
+    <td>CC BY NC 4.0</td>
+    <td>❌</td>
+    <td> </td>
+    <td>Subject to terms of Use of the data generated by OpenAI; <br/>Privacy Practices of ShareGPT</td>
+    <td>LLaMA corpus, 70K conversations from <a href="http://sharegpt.com/">ShareGPT.com</a></td>
+    </tr>
+    <tr>
+    <td>---&gt; GPT4ALL</td>
+    <td>GPL Licensed LLaMa</td>
+    <td>❌</td>
+    <td> </td>
+    <td>Public</td>
+    <td><a href="https://huggingface.co/datasets/nomic-ai/gpt4all_prompt_generations">GPT4All dataset</a></td>
+    </tr>
+    <tr>
+    <td>OpenLLaMA</td>
+    <td>Apache 2.0</td>
+    <td>✅</td>
+    <td> </td>
+    <td>Public</td>
+    <td><a href="https://www.together.xyz/blog/redpajama">RedPajama</a></td>
+    </tr>
+    <tr>
+    <td>CodeGeeX</td>
+    <td><a href="https://github.com/THUDM/CodeGeeX/blob/main/MODEL_LICENSE">The CodeGeeX License</a></td>
+    <td>❌</td>
+    <td>No use for illegal purposes or military research</td>
+    <td>Public</td>
+    <td>Pile, CodeParrot, etc.</td>
+    </tr>
+    <tr>
+    <td>StarCoder</td>
+    <td><a href="https://huggingface.co/spaces/bigcode/bigcode-model-license-agreement">BigCode OpenRAIL-M v1 license</a></td>
+    <td>✅</td>
+    <td>No use of generating verifiably false information with the purpose of harming others; <br/>content without expressly disclaiming that the text is machine generated</td>
+    <td>Public</td>
+    <td><a href="https://arxiv.org/pdf/2211.15533.pdf">The Stack</a></td>
+    </tr>
+    </tbody></table>
 
 ## Star History
 
