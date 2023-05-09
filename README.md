@@ -557,6 +557,14 @@ We urge the developers to pay special attention to licensing, make them transpar
     <td>Public</td>
     <td><a href="https://arxiv.org/pdf/2211.15533.pdf">The Stack</a></td>
     </tr>
+    <td>MPT-7B</td>
+    <td>Apache 2.0</td>
+    <td>✅</td>
+    <td> </td>
+    <td>Public</td>
+    <td><a href="https://arxiv.org/abs/2010.11934">mC4 (english)</a>, <a href="https://arxiv.org/pdf/2211.15533.pdf">The Stack</a>, <a href="https://www.together.xyz/blog/redpajama">RedPajama</a>, <a href="https://aclanthology.org/2020.acl-main.447/">S2ORC</a></td>
+    </tr>
+    <tr>
     </tbody></table>
 
 ## Star History
