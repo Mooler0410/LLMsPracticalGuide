@@ -31,6 +31,7 @@ If you find any resources in our repository helpful, please feel free to use the
 - We used PowerPoint to plot the figure and released the source file [pptx](./source/figure_gif.pptx) for our GIF figure. [4/27/2023]
 - We released the source file for the still version [pptx](./source/figure_still.pptx), and replaced the figure in this repo with the still version. [4/29/2023]
 - Add AlexaTM, UniLM, UniLMv2 to the figure, and correct the logo for Tk. [4/29/2023]
+- Add usage and Restrictions (for commercial and research purposes) section. Credits to [Dr. Du](https://github.com/xinyadu)!. [5/8/2023]
 
 
 
