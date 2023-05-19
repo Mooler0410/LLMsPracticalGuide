@@ -11,7 +11,7 @@ These sources aim to help practitioners navigate the vast landscape of large lan
 If you find any resources in our repository helpful, please feel free to use them (don't forget to cite our paper! 😃). We welcome pull requests to refine this figure! 
 
 <p align="center">
-<img width="600" src="./imgs/models-colorgrey.jpg"/>
+<img width="600" src="./imgs/qr_version.jpg"/>
 </p>
 
 
