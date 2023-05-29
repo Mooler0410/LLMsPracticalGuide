@@ -564,8 +564,14 @@ We urge the developers to pay special attention to licensing, make them transpar
     <td> </td>
     <td>Public</td>
     <td><a href="https://arxiv.org/abs/2010.11934">mC4 (english)</a>, <a href="https://arxiv.org/pdf/2211.15533.pdf">The Stack</a>, <a href="https://www.together.xyz/blog/redpajama">RedPajama</a>, <a href="https://aclanthology.org/2020.acl-main.447/">S2ORC</a></td>
-    </tr>
     <tr>
+        <td><a href="https://huggingface.co/tiiuae/falcon-40b">falcon</a></td>
+        <td><a href="https://huggingface.co/tiiuae/falcon-40b/blob/main/LICENSE.txt">TII Falcon LLM License</a></td>
+        <td>✅/❌</td>
+        <td>Available under a license allowing commercial use</td>
+        <td>Public</td>
+        <td><a href="https://huggingface.co/datasets/tiiuae/falcon-refinedweb">RefinedWeb</a></td>
+    </tr>
     </tbody></table>
 
 ## Star History
