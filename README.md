@@ -264,7 +264,7 @@ We build a decision flow for choosing LLMs or fine-tuned models~\protect\footnot
 - **Prompt Engineering**. [Blog](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/)
 - **ChatGPT Prompt Engineering for Developers!** [Course](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
 
-#### Alignment Efforts of Open-source Communtity
+#### Alignment Efforts of Open-source Community
 
 - **Self-Instruct: Aligning Language Model with Self Generated Instructions**, Arxiv 2022 [Paper](https://arxiv.org/abs/2212.10560)
 - **Alpaca**. [Repo](https://github.com/tatsu-lab/stanford_alpaca)
