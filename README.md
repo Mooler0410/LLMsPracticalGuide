@@ -11,7 +11,7 @@ These sources aim to help practitioners navigate the vast landscape of large lan
 If you find any resources in our repository helpful, please feel free to use them (don't forget to cite our paper! 😃). We welcome pull requests to refine this figure! 
 
 <p align="center">
-<img width="600" src="./imgs/qr_version.jpg"/>
+<img width="600" src="./imgs/tree.jpg"/>
 </p>
 
 
@@ -102,7 +102,9 @@ If you find any resources in our repository helpful, please feel free to use the
 - GPT-4 **"GPT-4 Technical Report"**. 2023. [Paper](http://arxiv.org/abs/2303.08774v2)
 - BloombergGPT **BloombergGPT: A Large Language Model for Finance**, 2023, [Paper](https://arxiv.org/abs/2303.17564)
 - GPT-NeoX-20B: **"GPT-NeoX-20B: An Open-Source Autoregressive Language Model"**. 2022. [Paper](https://arxiv.org/abs/2204.06745)
-
+- PaLM 2: **"PaLM 2 Technical Report"**. 2023. [Tech.Report](https://arxiv.org/abs/2305.10403)
+- LLaMA 2: **"Llama 2: Open foundation and fine-tuned chat models"**. 2023. [Paper](https://arxiv.org/pdf/2307.09288)
+- Claude 2: **"Model Card and Evaluations for Claude Models"**. 2023. [Model Card](https://www-files.anthropic.com/production/images/Model-Card-Claude-2.pdf)
 
 
 
