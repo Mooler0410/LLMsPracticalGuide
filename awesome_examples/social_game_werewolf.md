@@ -2,7 +2,7 @@
 
 In this lesson, we ask the model to play a social game called "One night ultimate werewolf". The game is played by a group of people. Each person is assigned a role. The game requires players to play strategically and to lie to each other. The model is expected to play the game with other players.
 
-It requries the following skills:
+It requires the following skills:
 - Understanding the rules and game flow of the game.
 - Understanding the roles of the game.
 - Knowing how to play strategically.
@@ -12,10 +12,10 @@ It requries the following skills:
 
 Comparing the the ChatGPT and GPT4 examples, we can see that 
 - ChatGPT can not understand the game rules and flow, while GPT4 can. ChatGPT follows the werewolf game rule not the one night ultimate werewolf game rule.
-- ChatGPT can not understand the roles of the game, while GPT4 can. ChatGPT hullucinates a non-existing player called "Tom".
+- ChatGPT can not understand the roles of the game, while GPT4 can. ChatGPT hallucinates a non-existing player called "Tom".
 - Both ChatGPT and GPT4 know how to play strategically, i.e., they know how to lie when necessary and how to tell the truth when necessary. However, ChatGPT's strategy is much more naive than GPT4's. & ChatGPT's argument is less convincing than GPT4's.
 - ChatGPT is also constrained by the limited context length.
-- However, it's hard to differentiate different players just in the style they talk. All bots chat in similar tones. It's hard to tell who is who, without the name as the uniqure identifier. It's will be gap to fill in the future.
+- However, it's hard to differentiate different players just in the style they talk. All bots chat in similar tones. It's hard to tell who is who, without the name as the unique identifier. It's will be gap to fill in the future.
 
 
 But the finding is not conclusive, since the game is implemented in Chinese.
