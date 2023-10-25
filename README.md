@@ -5,7 +5,7 @@
 	<img src="https://camo.githubusercontent.com/64f8905651212a80869afbecbf0a9c52a5d1e70beab750dea40a994fa9a9f3c6/68747470733a2f2f617765736f6d652e72652f62616467652e737667" alt="Awesome" data-canonical-src="https://awesome.re/badge.svg" style="max-width: 100%;">	     
 </p>
 
-A curated (still actively updated) list of practical guide resources of LLMs. It's based on our survey paper: [Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond](https://arxiv.org/abs/2304.13712) and efforts from @[xinyadu](https://github.com/xinyadu). The survey is partially based on the second half of this [Blog](https://jingfengyang.github.io/gpt). We also build an evolutionary tree of modern Large Language Models (LLMs) to trace the development of language models in recent years and highlights some of the most well-known models. 
+A curated (still actively updated) list of practical guide resources of LLMs. It's based on our survey paper: [Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond](https://arxiv.org/abs/2304.13712) and efforts from @[xinyadu](https://github.com/xinyadu). The survey is partially based on the second half of this [Blog](https://jingfengyang.github.io/gpt). We also build an evolutionary tree of modern Large Language Models (LLMs) to trace the development of language models in recent years and highlight some of the most well-known models. 
 
 These sources aim to help practitioners navigate the vast landscape of large language models (LLMs) and their applications in natural language processing (NLP) applications. We also include their usage restrictions based on the model and data licensing information.
 If you find any resources in our repository helpful, please feel free to use them (don't forget to cite our paper! 😃). We welcome pull requests to refine this figure! 
@@ -27,10 +27,10 @@ If you find any resources in our repository helpful, please feel free to use the
 ```
 
 ## Latest News💥
-- We added usage and restrictions section.
+- We added the usage and restrictions section.
 - We used PowerPoint to plot the figure and released the source file [pptx](./source/figure_gif.pptx) for our GIF figure. [4/27/2023]
 - We released the source file for the still version [pptx](./source/figure_still.pptx), and replaced the figure in this repo with the still version. [4/29/2023]
-- Add AlexaTM, UniLM, UniLMv2 to the figure, and correct the logo for Tk. [4/29/2023]
+- Add AlexaTM, UniLM, and UniLMv2 to the figure, and correct the logo for Tk. [4/29/2023]
 - Add usage and Restrictions (for commercial and research purposes) section. Credits to [Dr. Du](https://github.com/xinyadu).  [5/8/2023]
 
 
@@ -67,7 +67,7 @@ If you find any resources in our repository helpful, please feel free to use the
          * [Truthfulness Alignment (Honest)](#truthfulness-alignment-honest)
          * [Practical Guides for Prompting (Helpful)](#practical-guides-for-prompting-helpful)
          * [Alignment Efforts of Open-source Communtity](#alignment-efforts-of-open-source-communtity)
-   * [Usage and Restractions (Models and Data)](#Usage-and-Restrictions)
+   * [Usage and Restrictions (Models and Data)](#Usage-and-Restrictions)
 
 ## Practical Guide for Models
 
@@ -119,7 +119,7 @@ If you find any resources in our repository helpful, please feel free to use the
 - **Data-centric artificial intelligence: A survey**, 2023. [Paper](https://arxiv.org/abs/2303.10158)
 - **How does GPT Obtain its Ability? Tracing Emergent Abilities of Language Models to their Sources**, 2022. [Blog](https://yaofu.notion.site/How-does-GPT-Obtain-its-Ability-Tracing-Emergent-Abilities-of-Language-Models-to-their-Sources-b9a57ac0fcf74f30a1ab9e3e36fa1dc1)
 ### Finetuning data
-- **Benchmarking zero-shot text classification: Datasets, evaluation and entailment approach**, EMNLP 2019. [Paper](https://arxiv.org/abs/1909.00161)
+- **Benchmarking zero-shot text classification: Datasets, evaluation, and entailment approach**, EMNLP 2019. [Paper](https://arxiv.org/abs/1909.00161)
 - **Language Models are Few-Shot Learners**, NIPS 2020. [Paper](https://proceedings.neurips.cc/paper/2020/hash/1457c0d6bfcb4967418bfb8ac142f64a-Abstract.html)
 - **Does Synthetic Data Generation of LLMs Help Clinical Text Mining?** Arxiv 2023 [Paper](https://arxiv.org/abs/2303.04360)
 ### Test data/user data
@@ -132,7 +132,7 @@ If you find any resources in our repository helpful, please feel free to use the
 
 
 ## Practical Guide for NLP Tasks
-We build a decision flow for choosing LLMs or fine-tuned models~\protect\footnotemark for user's NLP applications. The decision flow helps users assess whether their downstream NLP applications at hand meet specific conditions and, based on that evaluation, determine whether LLMs or fine-tuned models are the most suitable choice for their applications.
+We build a decision flow for choosing LLMs or fine-tuned models~\protect\footnotemark for users' NLP applications. The decision flow helps users assess whether their downstream NLP applications at hand meet specific conditions and, based on that evaluation, determine whether LLMs or fine-tuned models are the most suitable choice for their applications.
 <p align="center">
 <img width="500" src="./imgs/decision.png"/>  
 </p>
@@ -146,7 +146,7 @@ We build a decision flow for choosing LLMs or fine-tuned models~\protect\footnot
 - **News summarization and evaluation in the era of gpt-3** Arxiv 2022 [Paper](https://arxiv.org/abs/2209.12356)
 - **Is chatgpt a good translator? yes with gpt-4 as the engine** Arxiv 2023 [Paper](https://arxiv.org/abs/2301.08745)
 - **Multilingual machine translation systems from Microsoft for WMT21 shared task**, WMT2021 [Paper](https://aclanthology.org/2021.wmt-1.54/)
-- **Can ChatGPT understand too? a comparative study on chatgpt and fine-tuned bert**, Arxiv 2023, [Paper](https://arxiv.org/pdf/2302.10198.pdf)
+- **Can ChatGPT understand too? A comparative study on chatgpt and fine-tuned bert**, Arxiv 2023, [Paper](https://arxiv.org/pdf/2302.10198.pdf)
 
 
 
@@ -175,7 +175,7 @@ We build a decision flow for choosing LLMs or fine-tuned models~\protect\footnot
 - **PaLI: A Jointly-Scaled Multilingual Language-Image Model**, Arxiv 2022 [Paper](https://arxiv.org/abs/2209.06794)
 - **AugGPT: Leveraging ChatGPT for Text Data Augmentation**, Arxiv 2023 [Paper](https://arxiv.org/abs/2302.13007)
 - **Is gpt-3 a good data annotator?**, Arxiv 2022 [Paper](https://arxiv.org/abs/2212.10450)
-- **Want To Reduce Labeling Cost? GPT-3 Can Help**, EMNLP findings 2021 [Paper](https://aclanthology.org/2021.findings-emnlp.354/)
+- **Want To Reduce Labeling Costs? GPT-3 Can Help**, EMNLP findings 2021 [Paper](https://aclanthology.org/2021.findings-emnlp.354/)
 - **GPT3Mix: Leveraging Large-scale Language Models for Text Augmentation**, EMNLP findings 2021 [Paper](https://aclanthology.org/2021.findings-emnlp.192/)
 - **LLM for Patient-Trial Matching: Privacy-Aware Data Augmentation Towards Better Performance and Generalizability**, Arxiv 2023 [Paper](https://arxiv.org/abs/2303.16756)
 - **ChatGPT Outperforms Crowd-Workers for Text-Annotation Tasks**, Arxiv 2023 [Paper](https://arxiv.org/abs/2303.15056)
@@ -210,7 +210,7 @@ We build a decision flow for choosing LLMs or fine-tuned models~\protect\footnot
 
 ### Trustworthiness
 1. Robustness and Calibration
-- **Calibrate before use: Improving few-shot performance of language models**, ICML 2021. [Paper](http://proceedings.mlr.press/v139/zhao21c.html)
+- **Calibrate before use: Improving the few-shot performance of language models**, ICML 2021. [Paper](http://proceedings.mlr.press/v139/zhao21c.html)
 - **SPeC: A Soft Prompt-Based Calibration on Mitigating Performance Variability in Clinical Notes Summarization**, Arxiv 2023. [Paper](https://arxiv.org/abs/2303.13035)
   
 2. Spurious biases
@@ -219,12 +219,12 @@ We build a decision flow for choosing LLMs or fine-tuned models~\protect\footnot
 - **Mitigating gender bias in captioning system**, WWW 2020 [Paper](https://dl.acm.org/doi/abs/10.1145/3442381.3449950)
 - **Calibrate Before Use: Improving Few-Shot Performance of Language Models**, ICML 2021 [Paper](https://arxiv.org/abs/2102.09690)
 - **Shortcut Learning in Deep Neural Networks**, Nature Machine Intelligence 2020 [Paper](https://www.nature.com/articles/s42256-020-00257-z)
-- **Do Prompt-Based Models Really Understand the Meaning of Their Prompts?**, NAACL 2022 [Paper](https://aclanthology.org/2022.naacl-main.167/)
+- **Do Prompt-Based Models Understand the Meaning of Their Prompts?**, NAACL 2022 [Paper](https://aclanthology.org/2022.naacl-main.167/)
   
 3. Safety issues
 - **GPT-4 System Card**, 2023 [Paper](https://cdn.openai.com/papers/gpt-4-system-card.pdf)
 - **The science of detecting llm-generated texts**, Arxiv 2023 [Paper](https://arxiv.org/pdf/2303.07205.pdf)
-- **How stereotypes are shared through language: a review and introduction of the aocial categories and stereotypes communication (scsc) framework**, Review of Communication Research, 2019 [Paper](https://research.vu.nl/en/publications/how-stereotypes-are-shared-through-language-a-review-and-introduc)
+- **How stereotypes are shared through language: a review and introduction of the social categories and stereotypes communication (scsc) framework**, Review of Communication Research, 2019 [Paper](https://research.vu.nl/en/publications/how-stereotypes-are-shared-through-language-a-review-and-introduc)
 - **Gender shades: Intersectional accuracy disparities in commercial gender classification**, FaccT 2018 [Paper](https://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf)
 
 
@@ -267,7 +267,7 @@ We build a decision flow for choosing LLMs or fine-tuned models~\protect\footnot
 - **Prompt Engineering**. [Blog](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/)
 - **ChatGPT Prompt Engineering for Developers!** [Course](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
 
-#### Alignment Efforts of Open-source Communtity
+#### Alignment Efforts of Open-source Community
 
 - **Self-Instruct: Aligning Language Model with Self Generated Instructions**, Arxiv 2022 [Paper](https://arxiv.org/abs/2212.10560)
 - **Alpaca**. [Repo](https://github.com/tatsu-lab/stanford_alpaca)
@@ -286,8 +286,8 @@ We build a decision flow for choosing LLMs or fine-tuned models~\protect\footnot
 <!-- The decision flow helps users assess whether their downstream NLP applications at hand meet specific conditions and, based on that evaluation, determine whether LLMs or fine-tuned models are the most suitable choice for their applications. -->
 
 We build a table summarizing the LLMs usage restrictions (e.g. for commercial and research purposes). In particular, we provide the information from the models and their pretraining data's perspective.
-We urge the users in the community to refer to the licensing information for public models and data and use them in a responsible manner.
-We urge the developers to pay special attention to licensing, make them transparent and comprehensive, to prevent any unwanted and unforeseen usage.
+We urge the users in the community to refer to the licensing information for public models and data and responsibly use them.
+We urge the developers to pay special attention to licensing, and make them transparent and comprehensive, to prevent any unwanted and unforeseen usage.
 
 <table class="table table-bordered table-hover table-condensed">
     <thead><tr><th title="Field #1">LLMs</th>
@@ -301,7 +301,7 @@ We urge the developers to pay special attention to licensing, make them transpar
     <td> </td>
     <td><b>License<b></td>
     <td><b>Commercial Use<b></td>
-    <td><b>Other noteable restrictions<b></td>
+    <td><b>Other notable restrictions<b></td>
     <td><b>License<b></td>
     <td><b>Corpus<b></td>
     </tr>
@@ -395,7 +395,7 @@ We urge the developers to pay special attention to licensing, make them transpar
     <td>ChatGLM</td>
     <td><a href="https://github.com/THUDM/ChatGLM-6B/blob/main/MODEL_LICENSE">ChatGLM License</a></td>
     <td>❌</td>
-    <td>No use for illegal purposes or military research, no harm the public interest of society</td>
+    <td>No use for illegal purposes or military research, no harm to the public interest of society</td>
     <td>N/A</td>
     <td>1T tokens of Chinese and English corpus</td>
     </tr>
@@ -405,7 +405,7 @@ We urge the developers to pay special attention to licensing, make them transpar
     <td>GPT2 </td>
     <td><a href="https://github.com/openai/gpt-2/blob/master/LICENSE">Modified MIT License</a></td>
     <td>✅</td>
-    <td>Use GPT-2 responsibly and clearly indicate your content was created using GPT-2.</td>
+    <td>Use GPT-2 responsibly and indicate your content was created using GPT-2.</td>
     <td>Public</td>
     <td>WebText</td>
     </tr>
@@ -461,7 +461,7 @@ We urge the developers to pay special attention to licensing, make them transpar
     <td>OPT</td>
     <td><a href="https://github.com/facebookresearch/metaseq/blob/main/projects/OPT/MODEL_LICENSE.md?fbclid=IwAR1BFK5X1XdUpx_QXoiqyfzYWdNAXJPcg8Cf0ddv5T7sa2UrLUvymj1J8G4">OPT-175B LICENSE AGREEMENT</a></td>
     <td>❌</td>
-    <td>No development relating to surveillance research and military, no harm the public interest of society</td>
+    <td>No development relating to surveillance research and military, no harm to the public interest of society</td>
     <td>Public</td>
     <td>RoBERTa corpus, the Pile, PushShift.io Reddit</td>
     </tr>
@@ -485,7 +485,7 @@ We urge the developers to pay special attention to licensing, make them transpar
     <td>BLOOM</td>
     <td><a href="https://bigscience.huggingface.co/blog/the-bigscience-rail-license">The BigScience RAIL License</a></td>
     <td>✅</td>
-    <td>No use of generating verifiably false information with the purpose of harming others; <br/>content without expressly disclaiming that the text is machine generated</td>
+    <td>No use of generating verifiably false information to harm others; <br/>content without expressly disclaiming that the text is machine generated</td>
     <td>Public</td>
     <td>ROOTS corpus (Lauren¸con et al., 2022)</td>
     </tr>
@@ -509,7 +509,7 @@ We urge the developers to pay special attention to licensing, make them transpar
     <td>LLaMA</td>
     <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSfqNECQnMkycAp2jP4Z9TFX0cGR4uf7b_fBxjY_OjhJILlKGA/viewform">Non-commercial bespoke license</a></td>
     <td>❌</td>
-    <td>No development relating to surveillance research and military, no harm the public interest of society</td>
+    <td>No development relating to surveillance research and military, no harm to the public interest of society</td>
     <td>Public</td>
     <td>CommonCrawl, C4, Github, Wikipedia, etc.</td>
     </tr>
@@ -557,7 +557,7 @@ We urge the developers to pay special attention to licensing, make them transpar
     <td>StarCoder</td>
     <td><a href="https://huggingface.co/spaces/bigcode/bigcode-model-license-agreement">BigCode OpenRAIL-M v1 license</a></td>
     <td>✅</td>
-    <td>No use of generating verifiably false information with the purpose of harming others; <br/>content without expressly disclaiming that the text is machine generated</td>
+    <td>No use of generating verifiably false information to harm others; <br/>content without expressly disclaiming that the text is machine generated</td>
     <td>Public</td>
     <td><a href="https://arxiv.org/pdf/2211.15533.pdf">The Stack</a></td>
     </tr>
@@ -566,7 +566,7 @@ We urge the developers to pay special attention to licensing, make them transpar
     <td>✅</td>
     <td> </td>
     <td>Public</td>
-    <td><a href="https://arxiv.org/abs/2010.11934">mC4 (english)</a>, <a href="https://arxiv.org/pdf/2211.15533.pdf">The Stack</a>, <a href="https://www.together.xyz/blog/redpajama">RedPajama</a>, <a href="https://aclanthology.org/2020.acl-main.447/">S2ORC</a></td>
+    <td><a href="https://arxiv.org/abs/2010.11934">mC4 (English)</a>, <a href="https://arxiv.org/pdf/2211.15533.pdf">The Stack</a>, <a href="https://www.together.xyz/blog/redpajama">RedPajama</a>, <a href="https://aclanthology.org/2020.acl-main.447/">S2ORC</a></td>
     <tr>
         <td><a href="https://huggingface.co/tiiuae/falcon-40b">falcon</a></td>
         <td><a href="https://huggingface.co/tiiuae/falcon-40b/blob/main/LICENSE.txt">TII Falcon LLM License</a></td>
