@@ -67,7 +67,7 @@ If you find any resources in our repository helpful, please feel free to use the
          * [Truthfulness Alignment (Honest)](#truthfulness-alignment-honest)
          * [Practical Guides for Prompting (Helpful)](#practical-guides-for-prompting-helpful)
          * [Alignment Efforts of Open-source Communtity](#alignment-efforts-of-open-source-communtity)
-   * [Usage and Restractions (Models and Data)](#Usage-and-Restrictions)
+   * [Usage and Restrictions (Models and Data)](#Usage-and-Restrictions)
 
 ## Practical Guide for Models
 
