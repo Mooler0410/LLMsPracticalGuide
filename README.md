@@ -183,6 +183,7 @@ We build a decision flow for choosing LLMs or fine-tuned models~\protect\footnot
 - **GPTScore: Evaluate as You Desire**, Arxiv 2023 [Paper](https://arxiv.org/abs/2302.04166)
 - **Large Language Models Are State-of-the-Art Evaluators of Translation Quality**, Arxiv 2023 [Paper](https://arxiv.org/abs/2302.14520)
 - **Is ChatGPT a Good NLG Evaluator? A Preliminary Study**, Arxiv 2023 [Paper](https://arxiv.org/abs/2303.04048)
+- **A Comprehensive Study of Knowledge Editing for Large Language Models**, Arxiv 2024 [Paper](https://arxiv.org/abs/2401.01286)
 
 ### Real-World ''Tasks''
 - **Sparks of Artificial General Intelligence: Early experiments with GPT-4**, Arxiv 2023 [Paper](https://arxiv.org/abs/2303.12712)
