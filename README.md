@@ -266,6 +266,7 @@ We build a decision flow for choosing LLMs or fine-tuned models~\protect\footnot
 - **OpenAI Cookbook**. [Blog](https://github.com/openai/openai-cookbook/blob/main/techniques_to_improve_reliability.md)
 - **Prompt Engineering**. [Blog](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/)
 - **ChatGPT Prompt Engineering for Developers!** [Course](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
+- **LLMOps: Building Real-World Applications With Large Language Models**. [Course](https://www.udacity.com/course/building-real-world-applications-with-large-language-models--cd13455)
 
 #### Alignment Efforts of Open-source Communtity
 
