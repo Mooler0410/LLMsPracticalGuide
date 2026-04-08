@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LLM Evolutionary Tree</title>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: #fafafa;
+  overflow: hidden;
+}
+
+#header {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(255,255,255,0.95); backdrop-filter: blur(8px);
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 20px; display: flex; align-items: center; gap: 20px;
+}
+
+#header h1 {
+  font-size: 20px; font-weight: 700; color: #333;
+  white-space: nowrap;
+}
+
+.controls {
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex; align-items: center; gap: 6px;
+}
+
+.filter-group label {
+  font-size: 12px; cursor: pointer; display: flex; align-items: center; gap: 4px;
+  padding: 3px 8px; border-radius: 12px; border: 1px solid #ddd;
+  background: #fff; transition: all 0.2s;
+}
+
+.filter-group label:hover { background: #f0f0f0; }
+.filter-group label.active { border-color: #666; background: #f5f5f5; }
+
+.filter-group .color-dot {
+  width: 8px; height: 8px; border-radius: 50%; display: inline-block;
+}
+
+.btn {
+  font-size: 12px; padding: 4px 12px; border-radius: 12px; cursor: pointer;
+  border: 1px solid #ddd; background: #fff; color: #333;
+  transition: all 0.2s;
+}
+.btn:hover { background: #e8e8e8; }
+
+.spacer { flex: 1; }
+
+#canvas-container {
+  width: 100vw; height: 100vh; padding-top: 50px;
+}
+
+svg { width: 100%; height: 100%; }
+
+.zone-bg { opacity: 0.06; }
+
+.link {
+  fill: none; stroke-width: 1.8; opacity: 0.5;
+}
+
+.node-group { cursor: pointer; }
+.node-group:hover .node-rect { filter: brightness(1.1); stroke-width: 2; }
+
+.node-rect {
+  rx: 6; ry: 6; stroke-width: 1; transition: filter 0.15s;
+}
+
+.node-text {
+  font-size: 11px; font-weight: 600; pointer-events: none;
+  text-anchor: middle; dominant-baseline: central;
+}
+
+.open-indicator {
+  stroke-width: 1.5;
+}
+
+.year-label {
+  font-size: 14px; font-weight: 700; fill: #666;
+  text-anchor: end;
+}
+
+.year-line {
+  stroke: #ddd; stroke-width: 1; stroke-dasharray: 4,4;
+}
+
+.arch-label {
+  font-size: 13px; font-weight: 600; fill: #999;
+  text-anchor: middle;
+}
+
+.tooltip {
+  position: fixed; pointer-events: none; z-index: 200;
+  background: rgba(30,30,30,0.92); color: #fff;
+  border-radius: 8px; padding: 10px 14px;
+  font-size: 12px; line-height: 1.6;
+  max-width: 300px; box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+  opacity: 0; transition: opacity 0.15s;
+}
+.tooltip.visible { opacity: 1; }
+.tooltip .tt-name { font-size: 14px; font-weight: 700; }
+.tooltip .tt-row { color: #bbb; }
+.tooltip .tt-link { color: #7ecfff; }
+
+.legend {
+  position: fixed; bottom: 16px; right: 16px; z-index: 100;
+  background: rgba(255,255,255,0.95); border: 1px solid #ddd;
+  border-radius: 8px; padding: 10px 14px; font-size: 11px;
+}
+.legend-item { display: flex; align-items: center; gap: 6px; margin: 3px 0; }
+.legend-circle {
+  width: 12px; height: 12px; border-radius: 50%; border: 2px solid;
+}
+
+.instructions {
+  position: fixed; bottom: 16px; left: 16px; z-index: 100;
+  background: rgba(255,255,255,0.9); border: 1px solid #ddd;
+  border-radius: 8px; padding: 8px 12px; font-size: 11px; color: #888;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+  <h1>LLM Evolutionary Tree</h1>
+  <div class="controls">
+    <div class="filter-group" id="arch-filters"></div>
+    <span style="color:#ccc">|</span>
+    <div class="filter-group" id="org-filters"></div>
+  </div>
+  <div class="spacer"></div>
+  <button class="btn" id="btn-reset">Reset View</button>
+  <button class="btn" id="btn-export-svg">Export SVG</button>
+  <button class="btn" id="btn-export-png">Export PNG</button>
+</div>
+
+<div id="canvas-container">
+  <svg id="tree-svg"></svg>
+</div>
+
+<div class="tooltip" id="tooltip"></div>
+
+<div class="legend">
+  <div style="font-weight:600; margin-bottom:4px;">Source Availability</div>
+  <div class="legend-item">
+    <div class="legend-circle" style="background:#e8f5e9; border-color:#4caf50;"></div>
+    <span>Open Source</span>
+  </div>
+  <div class="legend-item">
+    <div class="legend-circle" style="background:#fbe9e7; border-color:#ef5350;"></div>
+    <span>Closed Source</span>
+  </div>
+</div>
+
+<div class="instructions">
+  Scroll to zoom &middot; Drag to pan &middot; Hover for details &middot; Click to open paper
+</div>
+
+<script>
+// ============================================================
+// Configuration
+// ============================================================
+const CONFIG = {
+  margin: { top: 80, right: 60, bottom: 60, left: 80 },
+  nodeWidth: 110,
+  nodeHeight: 28,
+  yearRange: [2013, 2024],
+  archZones: {
+    'pre-transformer': { label: 'Pre-Transformer', xCenter: 0.07, xWidth: 0.08, color: '#9e9e9e' },
+    'encoder':         { label: 'Encoder-only',    xCenter: 0.20, xWidth: 0.14, color: '#e57373' },
+    'encoder-decoder': { label: 'Encoder-Decoder',  xCenter: 0.38, xWidth: 0.14, color: '#81c784' },
+    'decoder':         { label: 'Decoder-only',     xCenter: 0.70, xWidth: 0.46, color: '#64b5f6' }
+  }
+};
+
+// ============================================================
+// State
+// ============================================================
+let data = null;
+let activeArchFilters = new Set(['pre-transformer', 'encoder', 'encoder-decoder', 'decoder']);
+let activeOrgFilters = new Set();
+let allOrgs = new Set();
+
+// ============================================================
+// Load data and render
+// ============================================================
+async function loadData() {
+  try {
+    const resp = await fetch('../data/models.json');
+    data = await resp.json();
+  } catch (e) {
+    // Fallback: try same directory
+    try {
+      const resp = await fetch('./data/models.json');
+      data = await resp.json();
+    } catch (e2) {
+      // Inline fallback for when served from different root
+      const resp = await fetch('data/models.json');
+      data = await resp.json();
+    }
+  }
+
+  data.models.forEach(m => allOrgs.add(m.organization));
+  activeOrgFilters = new Set(allOrgs);
+  buildFilters();
+  render();
+}
+
+// ============================================================
+// Build filter UI
+// ============================================================
+function buildFilters() {
+  const archContainer = d3.select('#arch-filters');
+  Object.entries(CONFIG.archZones).forEach(([key, zone]) => {
+    const label = archContainer.append('label')
+      .attr('class', 'active')
+      .on('click', function() {
+        if (activeArchFilters.has(key)) {
+          if (activeArchFilters.size === 1) return; // Keep at least one
+          activeArchFilters.delete(key);
+          d3.select(this).classed('active', false);
+        } else {
+          activeArchFilters.add(key);
+          d3.select(this).classed('active', true);
+        }
+        render();
+      });
+    label.append('span').attr('class', 'color-dot').style('background', zone.color);
+    label.append('span').text(zone.label);
+  });
+
+  const orgContainer = d3.select('#org-filters');
+  const sortedOrgs = [...allOrgs].sort();
+  sortedOrgs.forEach(org => {
+    const orgColor = data.organizations[org]?.color || '#999';
+    const label = orgContainer.append('label')
+      .attr('class', 'active')
+      .on('click', function() {
+        if (activeOrgFilters.has(org)) {
+          if (activeOrgFilters.size === 1) return;
+          activeOrgFilters.delete(org);
+          d3.select(this).classed('active', false);
+        } else {
+          activeOrgFilters.add(org);
+          d3.select(this).classed('active', true);
+        }
+        render();
+      });
+    label.append('span').attr('class', 'color-dot').style('background', orgColor);
+    label.append('span').text(org);
+  });
+}
+
+// ============================================================
+// Layout: compute x,y positions for each model
+// ============================================================
+function computeLayout(models, width, height) {
+  const { margin, nodeHeight, yearRange } = CONFIG;
+  const plotH = height - margin.top - margin.bottom;
+  const plotW = width - margin.left - margin.right;
+
+  // Y scale: year -> pixel (bottom = old, top = new)
+  const yScale = d3.scaleLinear()
+    .domain([yearRange[0] - 0.5, yearRange[1]])
+    .range([plotH, 0]);
+
+  // Build model map
+  const modelMap = new Map(models.map(m => [m.id, { ...m, x: 0, y: 0 }]));
+
+  // Build children map for tree traversal
+  const childrenMap = new Map();
+  for (const m of modelMap.values()) {
+    if (m.parentId && modelMap.has(m.parentId)) {
+      if (!childrenMap.has(m.parentId)) childrenMap.set(m.parentId, []);
+      childrenMap.get(m.parentId).push(m.id);
+    }
+  }
+
+  // Count descendants (used to allocate width)
+  function countDesc(id) {
+    const kids = childrenMap.get(id) || [];
+    return kids.reduce((sum, kid) => sum + 1 + countDesc(kid), 0);
+  }
+
+  // For each architecture zone, do a tree-based layout
+  const archGroups = {};
+  for (const m of modelMap.values()) {
+    if (!archGroups[m.architecture]) archGroups[m.architecture] = [];
+    archGroups[m.architecture].push(m);
+  }
+
+  for (const [arch, zone] of Object.entries(CONFIG.archZones)) {
+    const group = archGroups[arch];
+    if (!group) continue;
+
+    const zoneLeft = (zone.xCenter - zone.xWidth / 2) * plotW;
+    const zoneRight = (zone.xCenter + zone.xWidth / 2) * plotW;
+    const zoneWidth = zoneRight - zoneLeft;
+    const zoneMid = (zoneLeft + zoneRight) / 2;
+
+    // Set y positions for all models
+    group.forEach(m => {
+      const yearFrac = m.year + (m.month || 1) / 12;
+      m.y = yScale(yearFrac);
+    });
+
+    // Find root nodes in this zone (no parent, or parent in different arch)
+    const roots = group.filter(m =>
+      !m.parentId || !modelMap.has(m.parentId) || modelMap.get(m.parentId).architecture !== arch
+    );
+
+    // Recursively assign x positions via tree walk
+    function layoutSubtree(nodeId, xMin, xMax) {
+      const node = modelMap.get(nodeId);
+      if (!node) return;
+
+      node.x = (xMin + xMax) / 2;
+
+      const kids = (childrenMap.get(nodeId) || [])
+        .filter(kid => modelMap.has(kid) && modelMap.get(kid).architecture === arch);
+
+      if (kids.length === 0) return;
+
+      // Allocate width proportional to subtree size
+      const sizes = kids.map(kid => 1 + countDesc(kid));
+      const totalSize = sizes.reduce((a, b) => a + b, 0);
+
+      let cursor = xMin;
+      kids.forEach((kid, i) => {
+        const portion = (sizes[i] / totalSize) * (xMax - xMin);
+        layoutSubtree(kid, cursor, cursor + portion);
+        cursor += portion;
+      });
+    }
+
+    // Distribute roots across the zone width
+    if (roots.length === 1) {
+      layoutSubtree(roots[0].id, zoneLeft + 20, zoneRight - 20);
+    } else {
+      // Sort roots by year for consistent ordering
+      roots.sort((a, b) => (a.year + (a.month||1)/12) - (b.year + (b.month||1)/12));
+      const sizes = roots.map(r => 1 + countDesc(r.id));
+      const totalSize = sizes.reduce((a, b) => a + b, 0);
+
+      let cursor = zoneLeft + 15;
+      const available = zoneWidth - 30;
+      roots.forEach((root, i) => {
+        const portion = (sizes[i] / totalSize) * available;
+        layoutSubtree(root.id, cursor, cursor + portion);
+        cursor += portion;
+      });
+    }
+
+    // Handle orphan nodes (in this zone with cross-zone parents)
+    group.forEach(m => {
+      if (m.x === 0) m.x = zoneMid;
+    });
+  }
+
+  // Multi-pass collision resolution
+  const positioned = [...modelMap.values()];
+  const nw = CONFIG.nodeWidth;
+  const nh = CONFIG.nodeHeight;
+
+  for (let pass = 0; pass < 20; pass++) {
+    let moved = false;
+    positioned.sort((a, b) => a.y - b.y || a.x - b.x);
+    for (let i = 0; i < positioned.length; i++) {
+      for (let j = i + 1; j < positioned.length; j++) {
+        const a = positioned[i], b = positioned[j];
+        if (a.architecture !== b.architecture) continue;
+        const dx = Math.abs(a.x - b.x);
+        const dy = Math.abs(a.y - b.y);
+        if (dx < nw + 6 && dy < nh + 3) {
+          const push = (nw + 8 - dx) / 2;
+          if (a.x <= b.x) { a.x -= push * 0.6; b.x += push * 0.6; }
+          else { a.x += push * 0.6; b.x -= push * 0.6; }
+          moved = true;
+        }
+      }
+    }
+    if (!moved) break;
+  }
+
+  return { modelMap, yScale, plotW, plotH };
+}
+
+// ============================================================
+// Render
+// ============================================================
+function render() {
+  const svg = d3.select('#tree-svg');
+  svg.selectAll('*').remove();
+
+  const container = document.getElementById('canvas-container');
+  // Use a large fixed canvas for the tree content to avoid overcrowding
+  const width = Math.max(container.clientWidth, 1600);
+  const height = Math.max(container.clientHeight, 1200);
+
+  svg.attr('viewBox', `0 0 ${width} ${height}`);
+
+  // Filter models
+  const filteredModels = data.models.filter(m =>
+    activeArchFilters.has(m.architecture) && activeOrgFilters.has(m.organization)
+  );
+
+  const { modelMap, yScale, plotW, plotH } = computeLayout(filteredModels, width, height);
+  const { margin } = CONFIG;
+
+  // Main group with zoom
+  const g = svg.append('g')
+    .attr('transform', `translate(${margin.left}, ${margin.top})`);
+
+  const zoomG = g.append('g');
+
+  const zoom = d3.zoom()
+    .scaleExtent([0.3, 4])
+    .on('zoom', (e) => zoomG.attr('transform', e.transform));
+
+  svg.call(zoom);
+
+  // Reset view button
+  d3.select('#btn-reset').on('click', () => {
+    svg.transition().duration(500).call(zoom.transform, d3.zoomIdentity);
+  });
+
+  // ---- Background zones ----
+  for (const [arch, zone] of Object.entries(CONFIG.archZones)) {
+    if (!activeArchFilters.has(arch)) continue;
+    const zoneLeft = (zone.xCenter - zone.xWidth / 2) * plotW;
+    const zoneWidth = zone.xWidth * plotW;
+
+    zoomG.append('rect')
+      .attr('class', 'zone-bg')
+      .attr('x', zoneLeft - 10)
+      .attr('y', -margin.top + 20)
+      .attr('width', zoneWidth + 20)
+      .attr('height', plotH + margin.top)
+      .attr('fill', zone.color)
+      .attr('rx', 12);
+
+    // Architecture label at bottom
+    zoomG.append('text')
+      .attr('class', 'arch-label')
+      .attr('x', zone.xCenter * plotW)
+      .attr('y', plotH + 25)
+      .text(zone.label)
+      .style('fill', zone.color);
+  }
+
+  // ---- Main trunk lines ----
+  // Draw thick trunk lines from bottom root to each architecture zone center
+  const trunkG = zoomG.append('g').attr('class', 'trunks');
+  const rootX = plotW * 0.38; // root at encoder-decoder center
+  const rootY = plotH + 10;
+
+  for (const [arch, zone] of Object.entries(CONFIG.archZones)) {
+    if (!activeArchFilters.has(arch)) continue;
+    if (arch === 'pre-transformer') continue;
+    const targetX = zone.xCenter * plotW;
+    const targetY = yScale(CONFIG.yearRange[0]) - 20;
+    const midY = (rootY + targetY) / 2 + 40;
+
+    trunkG.append('path')
+      .attr('d', `M ${rootX} ${rootY} C ${rootX} ${midY}, ${targetX} ${midY}, ${targetX} ${targetY}`)
+      .attr('fill', 'none')
+      .attr('stroke', zone.color)
+      .attr('stroke-width', 6)
+      .attr('opacity', 0.15)
+      .attr('stroke-linecap', 'round');
+  }
+
+  // ---- Year gridlines ----
+  for (let year = CONFIG.yearRange[0]; year <= CONFIG.yearRange[1]; year++) {
+    const y = yScale(year);
+    zoomG.append('line')
+      .attr('class', 'year-line')
+      .attr('x1', -margin.left + 10)
+      .attr('x2', plotW + 10)
+      .attr('y1', y).attr('y2', y);
+
+    zoomG.append('text')
+      .attr('class', 'year-label')
+      .attr('x', -10)
+      .attr('y', y + 4)
+      .text(year);
+  }
+
+  // ---- Year axis arrow ----
+  const arrowX = -margin.left + 30;
+  const arrowTop = yScale(CONFIG.yearRange[1]) - 20;
+  const arrowBottom = plotH + 10;
+  zoomG.append('line')
+    .attr('x1', arrowX).attr('y1', arrowBottom)
+    .attr('x2', arrowX).attr('y2', arrowTop)
+    .attr('stroke', '#999').attr('stroke-width', 2);
+  // Arrowhead
+  zoomG.append('path')
+    .attr('d', `M ${arrowX} ${arrowTop} l -5 10 l 10 0 Z`)
+    .attr('fill', '#999');
+
+  // ---- Links (parent-child connections) ----
+  const linkG = zoomG.append('g').attr('class', 'links');
+  for (const model of modelMap.values()) {
+    if (!model.parentId) continue;
+    const parent = modelMap.get(model.parentId);
+    if (!parent) continue;
+
+    const archColor = CONFIG.archZones[model.architecture]?.color || '#999';
+    const isCrossArch = parent.architecture !== model.architecture;
+
+    // Curved path from parent to child
+    const x1 = parent.x, y1 = parent.y;
+    const x2 = model.x, y2 = model.y;
+    const midY = (y1 + y2) / 2;
+
+    linkG.append('path')
+      .attr('class', 'link')
+      .attr('d', `M ${x1} ${y1} C ${x1} ${midY}, ${x2} ${midY}, ${x2} ${y2}`)
+      .attr('stroke', archColor)
+      .attr('stroke-dasharray', isCrossArch ? '4,3' : 'none')
+      .attr('opacity', isCrossArch ? 0.3 : 0.5);
+  }
+
+  // ---- Nodes ----
+  const nodeG = zoomG.append('g').attr('class', 'nodes');
+  const tooltip = d3.select('#tooltip');
+
+  for (const model of modelMap.values()) {
+    const orgColor = data.organizations[model.organization]?.color || '#999';
+    const nw = CONFIG.nodeWidth;
+    const nh = CONFIG.nodeHeight;
+
+    const group = nodeG.append('g')
+      .attr('class', 'node-group')
+      .attr('transform', `translate(${model.x}, ${model.y})`);
+
+    // Node rectangle
+    group.append('rect')
+      .attr('class', 'node-rect')
+      .attr('x', -nw / 2).attr('y', -nh / 2)
+      .attr('width', nw).attr('height', nh)
+      .attr('fill', d3.color(orgColor).brighter(0.6))
+      .attr('stroke', orgColor);
+
+    // Model name
+    group.append('text')
+      .attr('class', 'node-text')
+      .attr('fill', d3.color(orgColor).darker(1.5))
+      .text(model.name);
+
+    // Open/closed source indicator
+    const indicatorColor = model.openSource ? '#4caf50' : '#ef5350';
+    const indicatorBg = model.openSource ? '#e8f5e9' : '#fbe9e7';
+    group.append('circle')
+      .attr('class', 'open-indicator')
+      .attr('cx', nw / 2 - 4)
+      .attr('cy', -nh / 2 + 4)
+      .attr('r', 4)
+      .attr('fill', indicatorBg)
+      .attr('stroke', indicatorColor);
+
+    // Interactivity
+    group.on('mouseover', (event) => {
+      const yearStr = model.month
+        ? `${model.year}/${String(model.month).padStart(2, '0')}`
+        : `${model.year}`;
+      let html = `<div class="tt-name">${model.name}</div>`;
+      html += `<div class="tt-row">Organization: ${model.organization}</div>`;
+      html += `<div class="tt-row">Year: ${yearStr}</div>`;
+      html += `<div class="tt-row">Architecture: ${CONFIG.archZones[model.architecture]?.label || model.architecture}</div>`;
+      html += `<div class="tt-row">Open Source: ${model.openSource ? 'Yes' : 'No'}</div>`;
+      if (model.paper) {
+        html += `<div class="tt-link">Click to open paper</div>`;
+      }
+      tooltip.html(html)
+        .style('left', (event.clientX + 16) + 'px')
+        .style('top', (event.clientY - 10) + 'px')
+        .classed('visible', true);
+    })
+    .on('mousemove', (event) => {
+      tooltip
+        .style('left', (event.clientX + 16) + 'px')
+        .style('top', (event.clientY - 10) + 'px');
+    })
+    .on('mouseout', () => {
+      tooltip.classed('visible', false);
+    })
+    .on('click', () => {
+      if (model.paper) window.open(model.paper, '_blank');
+    });
+  }
+
+  // ---- Title ----
+  zoomG.append('text')
+    .attr('x', 0).attr('y', -margin.top + 30)
+    .attr('font-size', 22).attr('font-weight', 700).attr('fill', '#333')
+    .text('LLM Evolutionary Tree');
+}
+
+// ============================================================
+// Export functions
+// ============================================================
+function exportSVG() {
+  const svgEl = document.getElementById('tree-svg');
+  const serializer = new XMLSerializer();
+  let svgStr = serializer.serializeToString(svgEl);
+  svgStr = '<?xml version="1.0" encoding="UTF-8"?>\n' + svgStr;
+  const blob = new Blob([svgStr], { type: 'image/svg+xml;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = 'llm_tree.svg'; a.click();
+  URL.revokeObjectURL(url);
+}
+
+function exportPNG() {
+  const svgEl = document.getElementById('tree-svg');
+  const serializer = new XMLSerializer();
+  const svgStr = serializer.serializeToString(svgEl);
+  const canvas = document.createElement('canvas');
+  const ctx = canvas.getContext('2d');
+  const img = new Image();
+  const svgBlob = new Blob([svgStr], { type: 'image/svg+xml;charset=utf-8' });
+  const url = URL.createObjectURL(svgBlob);
+  img.onload = () => {
+    canvas.width = img.width * 2;
+    canvas.height = img.height * 2;
+    ctx.scale(2, 2);
+    ctx.fillStyle = '#fafafa';
+    ctx.fillRect(0, 0, img.width, img.height);
+    ctx.drawImage(img, 0, 0);
+    canvas.toBlob(blob => {
+      const pngUrl = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = pngUrl; a.download = 'llm_tree.png'; a.click();
+      URL.revokeObjectURL(pngUrl);
+    });
+    URL.revokeObjectURL(url);
+  };
+  img.src = url;
+}
+
+d3.select('#btn-export-svg').on('click', exportSVG);
+d3.select('#btn-export-png').on('click', exportPNG);
+
+// ============================================================
+// Responsive resize
+// ============================================================
+window.addEventListener('resize', () => { if (data) render(); });
+
+// ============================================================
+// Start
+// ============================================================
+loadData();
+</script>
+</body>
+</html>
