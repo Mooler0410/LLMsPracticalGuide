@@ -301,7 +301,7 @@ We urge the developers to pay special attention to licensing, make them transpar
     <td> </td>
     <td><b>License<b></td>
     <td><b>Commercial Use<b></td>
-    <td><b>Other noteable restrictions<b></td>
+    <td><b>Other notable restrictions<b></td>
     <td><b>License<b></td>
     <td><b>Corpus<b></td>
     </tr>
