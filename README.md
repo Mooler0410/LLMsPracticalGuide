@@ -38,6 +38,7 @@ If you find any resources in our repository helpful, please feel free to use the
 
 ## Other Practical Guides for LLMs
 
+- **AI Models Catalog** — Structured database of 4,587+ AI models across 95 providers with pricing, context windows, and capabilities. [GitHub](https://github.com/i-need-token/ai-models) | [Interactive Catalog](https://i-need-token.github.io/ai-models/)
 - **Why did all of the public reproduction of GPT-3 fail? In which tasks should we use GPT-3.5/ChatGPT?** 2023, [Blog](https://jingfengyang.github.io/gpt) 
 - **Building LLM applications for production**, 2023, [Blog](https://huyenchip.com/2023/04/11/llm-engineering.html)
 - **Data-centric Artificial Intelligence**, 2023, [Repo](https://github.com/daochenzha/data-centric-AI)/[Blog](https://towardsdatascience.com/what-are-the-data-centric-ai-concepts-behind-gpt-models-a590071bb727)/[Paper](https://arxiv.org/abs/2303.10158)
