@@ -2,7 +2,7 @@
 
 In this lesson, we ask the model to answer questions based on a table. The table is provided as a prompt. The model is expected to answer questions about the table.
 
-Comparing the following two examples, ChatGPT is vulnerable to table row order perturbation, while GPT4 is robust to table row order perturbation. Such robustness could probably be due to two reasons. The first reason is larger model size and more pretraining data of GPT4. Secondly, better truthfulness stemming from better RLHF alignment could help GPT4 follow different formats of the same instructions better. 
+Comparing the following two examples, ChatGPT is vulnerable to table row order perturbation, while GPT4 is robust to table row order perturbation. Such robustness could probably be due to two reasons. The first reason is larger model size and more pretraining data of GPT4. Secondly, better truthfulness stemming from better RLHF alignment could help GPT4 follow different formats of the same instructions better.
 
 Note that smaller finetuned models heavily suffer from such non-robustness issue, according to the paper: [TableFormer: Robust Transformer Modeling for Table-Text Encoding](https://arxiv.org/pdf/2203.00274.pdf)
 
