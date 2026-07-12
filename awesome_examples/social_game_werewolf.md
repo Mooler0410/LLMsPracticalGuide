@@ -10,7 +10,7 @@ It requries the following skills:
 - Knowing how to tell the truth when necessary (e.g., when you are a villager).
 - Knowing how to argue with other players.
 
-Comparing the the ChatGPT and GPT4 examples, we can see that 
+Comparing the the ChatGPT and GPT4 examples, we can see that
 - ChatGPT can not understand the game rules and flow, while GPT4 can. ChatGPT follows the werewolf game rule not the one night ultimate werewolf game rule.
 - ChatGPT can not understand the roles of the game, while GPT4 can. ChatGPT hullucinates a non-existing player called "Tom".
 - Both ChatGPT and GPT4 know how to play strategically, i.e., they know how to lie when necessary and how to tell the truth when necessary. However, ChatGPT's strategy is much more naive than GPT4's. & ChatGPT's argument is less convincing than GPT4's.
@@ -22,7 +22,7 @@ But the finding is not conclusive, since the game is implemented in Chinese.
 
 Codebase: https://github.com/HMJiangGatech/GPT4-werewolf
 
-# Examples 
+# Examples
 
 ## ChatGPT Example 1
 
@@ -38,7 +38,7 @@ Codebase: https://github.com/HMJiangGatech/GPT4-werewolf
 玩家 4: Eve
 轮到你行动了.
 你是酒鬼，你可以选择交换自己的身份牌和中央区域的一张牌.
-请输入你要交换的牌的编号（0, 1, 2）: 0 
+请输入你要交换的牌的编号（0, 1, 2）: 0
 你交换了自己的身份牌和中央区域的第 1 张牌.
 玩家 上帝 说: 天亮了，所有人睁眼！请大家开始讨论。讨论时间为3轮。
 玩家 Alice 说: 天亮了，我们有三分钟的时间来讨论一下。我昨晚没有收到什么有价值的信息。但是Charlie是爪牙，这对我们接下来的推理可能有重要影响。所以我希望领先的几位可以分享一下你们的信息和想法。
@@ -48,7 +48,7 @@ Codebase: https://github.com/HMJiangGatech/GPT4-werewolf
 玩家 上帝 说: 请Eve发言。记住你晚上的信息是"酒鬼请睁眼，你交换了自己的身份牌和中央区域的第 1 张牌 （左）. "。根据别人的信息，如果你觉得你是狼人，不要轻易说自己是狼人，请想办法归票到别人身上。如果你觉得你不是狼人，请想办法归票到狼人身上。
 ```
 
-Totally wrong understanding of the rules of game. But it's fun to see how AI plays the game. 
+Totally wrong understanding of the rules of game. But it's fun to see how AI plays the game.
 
 ## ChatGPT Example 2
 
@@ -125,10 +125,10 @@ ChatGPT can not complete the game, due to the limited context length.
 你是预言家，你可以查看一位玩家或者两张中央区域的牌.
 请输入你的选择（0:玩家/1:中央区域）: 1
 请输入你要查看的第一张牌的编号: 0
-你查看了中央区域的第 1 张牌 （左）. 
+你查看了中央区域的第 1 张牌 （左）.
 第 1 张牌是 强盗.
 请输入你要查看的第二张牌的编号: 1
-你查看了中央区域的第 2 张牌 （中）. 
+你查看了中央区域的第 2 张牌 （中）.
 第 2 张牌是 酒鬼.
 玩家 上帝 说: 天亮了，所有人睁眼！请大家开始讨论。讨论时间为3轮。
 玩家 Alice 说: 大家好，我在昨晚觉得有些奇怪，我觉得我是预言家，我查看了Bob的身份，他似乎是一个捣蛋鬼。那么我们可以从其他信息中寻找狼人的线索，请大家分享一下各自的信息。
